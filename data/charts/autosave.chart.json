@@ -1,0 +1,42 @@
+{
+    "song_path": "C:\\Users\\HAJE\\oreo\\python-rhythm-editor\\AKAGE [\u8d64\u6bdb].mp3",
+    "bpm": 120.0,
+    "offset_ms": 0,
+    "num_lanes": 4,
+    "note_types": {
+        "Tap": {
+            "name": "Tap",
+            "color": [
+                255,
+                80,
+                80
+            ],
+            "is_long_note": false,
+            "play_hitsound": true
+        },
+        "Long": {
+            "name": "Long",
+            "color": [
+                80,
+                80,
+                255
+            ],
+            "is_long_note": true,
+            "play_hitsound": true
+        }
+    },
+    "notes": [
+        {
+            "time_ms": 3625.0,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 5375.0,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        }
+    ]
+}

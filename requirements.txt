@@ -1,0 +1,7 @@
+﻿pygame-ce
+pygame-gui
+librosa
+numpy
+soundfile
+scipy
+audioread

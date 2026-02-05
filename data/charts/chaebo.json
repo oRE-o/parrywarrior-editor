@@ -1,0 +1,164 @@
+{
+    "song_path": "C:\\Users\\HAJE\\oreo\\python-rhythm-editor\\mysong.wav",
+    "bpm": 163.0,
+    "offset_ms": 0,
+    "num_lanes": 4,
+    "note_types": {
+        "Tap": {
+            "name": "Tap",
+            "color": [
+                255,
+                80,
+                80
+            ],
+            "is_long_note": false,
+            "play_hitsound": true
+        },
+        "Long": {
+            "name": "Long",
+            "color": [
+                80,
+                80,
+                255
+            ],
+            "is_long_note": true,
+            "play_hitsound": true
+        },
+        "gigigigi": {
+            "name": "gigigigi",
+            "color": [
+                80,
+                255,
+                80
+            ],
+            "is_long_note": true,
+            "play_hitsound": true
+        },
+        "1212123": {
+            "name": "1212123",
+            "color": [
+                22,
+                109,
+                224
+            ],
+            "is_long_note": true,
+            "play_hitsound": true
+        }
+    },
+    "notes": [
+        {
+            "time_ms": 2944.7852760736196,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 3128.834355828221,
+            "note_type_name": "Tap",
+            "lane": 1,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 3312.883435582822,
+            "note_type_name": "Tap",
+            "lane": 2,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 3496.9325153374234,
+            "note_type_name": "Tap",
+            "lane": 3,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 4417.177914110429,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 4785.2760736196315,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 4141.104294478528,
+            "note_type_name": "Tap",
+            "lane": 2,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 4049.079754601227,
+            "note_type_name": "Tap",
+            "lane": 1,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 3680.9815950920247,
+            "note_type_name": "Tap",
+            "lane": 2,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 3680.9815950920247,
+            "note_type_name": "1212123",
+            "lane": 3,
+            "end_time_ms": 4325.1533742331285
+        },
+        {
+            "time_ms": 5889.570552147239,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 6257.668711656442,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 6625.766871165644,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 7361.963190184049,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 6993.865030674847,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 7730.061349693251,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 8098.159509202454,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 8466.257668711656,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        },
+        {
+            "time_ms": 8834.355828220858,
+            "note_type_name": "Tap",
+            "lane": 0,
+            "end_time_ms": null
+        }
+    ]
+}

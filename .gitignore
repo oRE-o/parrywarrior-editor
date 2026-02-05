@@ -1,0 +1,23 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+
+# Environments
+venv_*/
+.venv/
+
+# Build artifacts
+dist/
+
+# Test/cache
+.pytest_cache/
+
+# OS
+.DS_Store
+# PyInstaller
+build/
+
+# Large binaries (download separately)
+tools/ffmpeg/

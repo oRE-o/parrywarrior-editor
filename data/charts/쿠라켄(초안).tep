@@ -1,0 +1,8048 @@
+﻿{
+  "ProjectName": "쿠라켄",
+  "AudioFilePath": "C:\\Users\\HAJE\\Downloads\\Kraken_BaseZero_revised.wav",
+  "Bpm": 163,
+  "LaneCount": 5,
+  "AudioOffset": 0,
+  "Notes": [
+    {
+      "Time": 2.9447852760736195,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 1.4723926380368098,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 4.417177914110429,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 5.889570552147239,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 8.834355828220858,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 7.361963190184049,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 11.779141104294478,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 10.306748466257668,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 14.723926380368098,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 13.251533742331288,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 17.668711656441715,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 16.196319018404907,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 20.613496932515336,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 19.141104294478527,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 22.085889570552148,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 23.558282208588956,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 24.29447852760736,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 25.030674846625764,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 25.766871165644172,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.503067484662576,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 25.950920245398773,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 25.950920245398773,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.134969325153374,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.134969325153374,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.134969325153374,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.134969325153374,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.319018404907975,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.319018404907975,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.319018404907975,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.319018404907975,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 27.23926380368098,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 27.42331288343558,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 27.791411042944784,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 28.159509202453986,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 28.343558282208587,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 28.71165644171779,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 28.89570552147239,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 2.9447852760736195,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 4.417177914110429,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 5.889570552147239,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 7.361963190184049,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 8.834355828220858,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 8.834355828220858,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 10.306748466257668,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 10.306748466257668,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 11.779141104294478,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 11.779141104294478,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 13.251533742331288,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 13.251533742331288,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 14.723926380368098,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 14.723926380368098,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 19.141104294478527,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 20.613496932515336,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 20.613496932515336,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 22.085889570552148,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 22.085889570552148,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 24.29447852760736,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 24.29447852760736,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 24.29447852760736,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 24.29447852760736,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 25.030674846625764,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 25.030674846625764,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 16.196319018404907,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 16.196319018404907,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 17.668711656441715,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 17.668711656441715,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 19.141104294478527,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 29.447852760736197,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.0920245398773,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.1840490797546,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.2760736196319,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.0920245398773,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.0920245398773,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.1840490797546,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.1840490797546,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.2760736196319,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.2760736196319,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.2760736196319,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.1840490797546,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.0920245398773,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.687116564417177,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 27.05521472392638,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 27.42331288343558,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 27.791411042944784,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 28.159509202453986,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 28.527607361963188,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 28.89570552147239,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 29.263803680981592,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 30.920245398773005,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 31.56441717791411,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 31.65644171779141,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 31.74846625766871,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 31.93251533742331,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 32.11656441717791,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 32.02453987730061,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 31.84049079754601,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 31.47239263803681,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 21.901840490797547,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 23.190184049079754,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 23.190184049079754,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 32.392638036809814,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 50.06134969325153,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.84049079754601,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.34355828220859,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.9877300613497,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.079754601227,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.9877300613497,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.8957055214724,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.8159509202454,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.5521472392638,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.7361963190184,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.920245398773,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.1042944785276,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.28834355828221,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.02453987730061,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.20858895705521,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.39263803680981,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.57668711656441,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.94478527607362,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.49693251533742,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.7239263803681,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.8159509202454,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.7239263803681,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.6319018404908,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.7361963190184,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.920245398773,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.1042944785276,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.65644171779141,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.02453987730061,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.20858895705521,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.39263803680981,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.57668711656441,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.30061349693251,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.66871165644172,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.94478527607362,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.94478527607362,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.94478527607362,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.94478527607362,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.7361963190184,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.7361963190184,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.17791411042944,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 32.760736196319016,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 33.12883435582822,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 33.12883435582822,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 33.86503067484662,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 33.49693251533742,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 34.04907975460122,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 34.601226993865026,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 35.33742331288343,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 35.70552147239264,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 36.07361963190184,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 36.441717791411044,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 36.809815950920246,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 37.17791411042945,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 37.54601226993865,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 37.91411042944785,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 38.282208588957054,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 38.65030674846626,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 39.20245398773006,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 39.01840490797546,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 39.57055214723926,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 39.938650306748464,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 40.122699386503065,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 40.49079754601227,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 41.41104294478527,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 40.67484662576687,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.055214723926376,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.14723926380368,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 41.963190184049076,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.43558282208589,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.25153374233129,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.34355828220859,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.61963190184049,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.80368098159509,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 44.171779141104295,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.47239263803681,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.56441717791411,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.65644171779141,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.74846625766871,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.47239263803681,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.56441717791411,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.65644171779141,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.74846625766871,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 61.84049079754601,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 67.73006134969324,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 69.93865030674846,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 69.57055214723925,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.67484662576686,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.69938650306748,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 45.0920245398773,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 45.4601226993865,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 45.828220858895705,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 46.38036809815951,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 47.11656441717791,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 47.852760736196316,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 48.22085889570552,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 48.58895705521472,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 49.69325153374233,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.42331288343558,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.15950920245398,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.527607361963184,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.895705521472394,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 31.56441717791411,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 31.65644171779141,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 32.94478527607362,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 34.417177914110425,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 50.24539877300613,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 50.61349693251533,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 51.34969325153374,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 51.16564417177914,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 50.981595092024534,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 50.42944785276073,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 51.717791411042946,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 51.90184049079755,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 52.08588957055215,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 52.45398773006135,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 52.63803680981595,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 52.82208588957055,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 53.190184049079754,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 53.374233128834355,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 53.558282208588956,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 53.92638036809816,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 54.11042944785276,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 54.29447852760736,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 54.66257668711656,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 54.84662576687116,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 55.030674846625764,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 55.39877300613497,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.60736196319018,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.34355828220858,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.711656441717786,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.079754601226995,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 15.828220858895705,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 21.717791411042946,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 17.300613496932513,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 18.773006134969325,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 20.245398773006134,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 22.822085889570552,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 23.190184049079754,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 25.950920245398773,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.134969325153374,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 26.319018404907975,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 25.398773006134967,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.987730061349694,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.171779141104295,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.263803680981596,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.355828220858896,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.4478527607362,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.5398773006135,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.6319018404908,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.7239263803681,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.8159509202454,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 60,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 60.0920245398773,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 60.1840490797546,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 60.2760736196319,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 60.3680981595092,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.18404907975459,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.42944785276073,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.49693251533742,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.49693251533742,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.49693251533742,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.49693251533742,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.86503067484662,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.86503067484662,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.86503067484662,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.70552147239263,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.79754601226993,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.88957055214723,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.98159509202453,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.07361963190183,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.16564417177914,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.25766871165644,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.34969325153374,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.44171779141104,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.53374233128834,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.62576687116564,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.71779141104294,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.80981595092024,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.90184049079754,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.99386503067484,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.08588957055214,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.17791411042944,
+      "Lane": 0,
+      "Type": 2,
+      "NoteToolName": "Trigger 노트 1",
+      "NoteToolColor": "#800080",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.54601226993864,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.73006134969324,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.91411042944785,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 98.09815950920245,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 98.28220858895705,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 98.46625766871165,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 98.46625766871165,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 98.28220858895705,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 98.09815950920245,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.91411042944785,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.54601226993864,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.73006134969324,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.01840490797545,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.01840490797545,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.20245398773005,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.38650306748465,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.57055214723925,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.75460122699386,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.93865030674846,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.20245398773005,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.38650306748465,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.57055214723925,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.75460122699386,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.93865030674846,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.49079754601226,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.49079754601226,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.67484662576686,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.85889570552146,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.04294478527606,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.22699386503066,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.41104294478527,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.67484662576686,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.85889570552146,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.22699386503066,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.22699386503066,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.41104294478527,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.04294478527606,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.69938650306749,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.51533742331289,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.33128834355828,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.69938650306749,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.33128834355828,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.14723926380368,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.14723926380368,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.14723926380368,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.96319018404907,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.51533742331289,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.88343558282209,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 102.88343558282209,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 64.78527607361963,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 65.15337423312883,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 33.49693251533742,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 34.601226993865026,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 34.78527607361963,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 34.96932515337423,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 35.15337423312883,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 36.07361963190184,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 36.25766871165644,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 36.625766871165645,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 36.441717791411044,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 36.809815950920246,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 35.88957055214724,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 37.17791411042945,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 37.36196319018405,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 37.73006134969325,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 37.91411042944785,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 38.466257668711656,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 38.83435582822086,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 39.20245398773006,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 38.282208588957054,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 38.65030674846626,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 39.20245398773006,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 39.57055214723926,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 39.57055214723926,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 41.41104294478527,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 41.779141104294474,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.14723926380368,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.51533742331288,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 41.41104294478527,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 41.41104294478527,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 41.41104294478527,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 41.779141104294474,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.14723926380368,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.14723926380368,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.51533742331288,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.69938650306748,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.06748466257668,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.43558282208589,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.80368098159509,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 42.69938650306748,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.06748466257668,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.43558282208589,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 43.80368098159509,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 44.171779141104295,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 44.171779141104295,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 29.447852760736197,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 29.447852760736197,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 29.447852760736197,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 29.447852760736197,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.42331288343558,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.60736196319018,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.79141104294478,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.97546012269938,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.15950920245398,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.15950920245398,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.34355828220858,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.527607361963184,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.711656441717786,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 58.895705521472394,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.079754601226995,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.263803680981596,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.4478527607362,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.6319018404908,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.8159509202454,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 60,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 60.1840490797546,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 59.9079754601227,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 60.3680981595092,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.39877300613496,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.49079754601226,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.58282208588956,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.67484662576686,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.76687116564416,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.85889570552146,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.95092024539876,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.04294478527606,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.13496932515336,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.22699386503066,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.31901840490796,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.41104294478528,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.50306748466258,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.59509202453988,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.68711656441718,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.77914110429448,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.87116564417178,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.39877300613496,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.76687116564416,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.13496932515336,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.50306748466258,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.96319018404908,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.05521472392638,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.14723926380368,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.23926380368098,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.33128834355828,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.42331288343559,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.51533742331289,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.60736196319019,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.69938650306749,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.79141104294479,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.88343558282209,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.97546012269939,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.06748466257669,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.15950920245399,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.25153374233129,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 86.87116564417178,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.23926380368098,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.60736196319019,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.43558282208589,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.52760736196319,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.61963190184049,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.71165644171779,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.8036809815951,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.8957055214724,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.9877300613497,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.079754601227,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.1717791411043,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.2638036809816,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.3558282208589,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.4478527607362,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.5398773006135,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.6319018404908,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.7239263803681,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.06134969325153,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.15337423312883,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.24539877300613,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.33742331288343,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.42944785276073,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.52147239263803,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.61349693251533,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.96932515337423,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.87730061349693,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.78527607361963,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.69325153374233,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.60122699386503,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.50920245398773,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.41717791411043,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.32515337423312,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.23312883435582,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.60122699386503,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.96932515337423,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.33742331288343,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.70552147239263,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.80981595092024,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.07361963190183,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 95.88957055214723,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 96.25766871165644,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 62.576687116564415,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 63.12883435582822,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 63.68098159509202,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 64.23312883435582,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.22699386503068,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.31901840490798,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.41104294478528,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.31901840490798,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.22699386503068,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.31901840490798,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.22699386503068,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.41104294478528,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.41104294478528,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 72.14723926380368,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 74.3558282208589,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.0920245398773,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.0920245398773,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.0920245398773,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.0920245398773,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.4601226993865,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.6441717791411,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.4601226993865,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.4601226993865,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.4601226993865,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 74.7239263803681,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 75.8282208588957,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 107.48466257668711,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.95705521472392,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.95705521472392,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.0122699386503,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.0122699386503,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.85889570552148,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.1042944785276,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.1042944785276,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.1963190184049,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.1963190184049,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.28834355828221,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.28834355828221,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.38036809815951,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.38036809815951,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.47239263803681,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.47239263803681,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.56441717791411,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.56441717791411,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.0122699386503,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.93251533742331,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.30061349693251,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.66871165644172,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.03680981595092,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.40490797546012,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.50920245398773,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 99.01840490797545,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.54601226993864,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.49079754601226,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.96319018404907,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 103.43558282208589,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 103.8036809815951,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 104.1717791411043,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 104.5398773006135,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 103.43558282208589,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 103.8036809815951,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 104.1717791411043,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 104.5398773006135,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 104.9079754601227,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 105.2760736196319,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 105.6441717791411,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 106.0122699386503,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 104.9079754601227,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 105.2760736196319,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 105.6441717791411,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 106.0122699386503,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 106.74846625766871,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 106.38036809815951,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 107.11656441717791,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 103.43558282208589,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 104.9079754601227,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 106.74846625766871,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 107.48466257668711,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 106.0122699386503,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.58895705521472,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.95705521472392,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 56.50306748466257,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.36196319018404,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 97.36196319018404,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 98.83435582822085,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 98.83435582822085,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.96319018404907,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.77914110429447,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.77914110429447,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.30674846625766,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.30674846625766,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 100.12269938650306,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 101.59509202453987,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 98.65030674846625,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 103.06748466257669,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 104.5398773006135,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.49693251533742,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.49693251533742,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.49693251533742,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.49693251533742,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.14110429447852,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.77300613496932,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.55521472392638,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.55521472392638,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.55521472392638,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.55521472392638,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.18711656441718,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.18711656441718,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.18711656441718,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 79.18711656441718,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.81901840490798,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.81901840490798,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.81901840490798,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.81901840490798,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.08282208588956,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.08282208588956,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.08282208588956,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 78.08282208588956,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.71472392638036,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.71472392638036,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.71472392638036,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.71472392638036,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.34662576687116,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.34662576687116,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.34662576687116,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.97852760736195,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.97852760736195,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.97852760736195,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 76.97852760736195,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 77.34662576687116,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.23926380368098,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.0920245398773,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.1840490797546,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.2760736196319,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.3680981595092,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.4601226993865,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 106.38036809815951,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 107.11656441717791,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.65030674846625,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.74233128834355,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 89.9079754601227,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.97546012269939,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.34355828220859,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.47239263803681,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.38036809815951,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.65644171779141,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.74846625766871,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.84049079754601,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.93251533742331,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.56441717791411,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.40490797546012,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.76073619631902,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 92.85276073619632,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.03680981595092,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.12883435582822,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.22085889570552,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.31288343558282,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.40490797546012,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.58895705521472,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.68098159509202,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 103.8036809815951,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 104.1717791411043,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 105.2760736196319,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 105.6441717791411,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 90.5521472392638,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.28834355828221,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 91.47239263803681,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.43558282208589,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.25153374233129,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 88.06748466257669,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 87.88343558282209,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 80.61349693251533,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 80.24539877300613,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.45398773006134,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.00613496932515,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 84.84662576687116,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.77300613496932,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.86503067484662,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 93.95705521472392,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.04907975460122,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.14110429447852,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 94.23312883435582,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 109.69325153374233,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 110.61349693251533,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 110.98159509202453,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 111.90184049079754,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 112.26993865030674,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 112.63803680981594,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.11042944785275,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.29447852760735,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.47852760736195,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.66257668711656,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.20245398773005,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.38650306748465,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.57055214723925,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.20245398773005,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.38650306748465,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.57055214723925,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.65030674846625,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.37423312883435,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 111.90184049079754,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.19018404907975,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 112.82208588957054,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.00613496932515,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 23.558282208588956,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 23.558282208588956,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 62.576687116564415,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 62.576687116564415,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 63.12883435582822,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 63.31288343558282,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 63.31288343558282,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 64.04907975460122,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 65.52147239263803,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 65.70552147239263,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 65.88957055214723,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 66.07361963190183,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 65.70552147239263,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 65.52147239263803,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 65.88957055214723,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 66.07361963190183,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 66.25766871165644,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 64.04907975460122,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 64.23312883435582,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 66.62576687116564,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 66.99386503067484,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 67.17791411042944,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 67.36196319018404,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 67.54601226993864,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 67.54601226993864,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 66.99386503067484,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 67.17791411042944,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 67.36196319018404,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 72.88343558282209,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 72.97546012269939,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.06748466257669,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.15950920245399,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.25153374233129,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.34355828220859,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.43558282208589,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.52760736196319,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.61963190184049,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 81.16564417177914,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 81.53374233128834,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 81.71779141104294,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.84662576687116,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.75460122699386,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 114.75460122699386,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.6042944785276,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.6963190184049,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.74233128834355,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.78834355828221,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.83435582822085,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.88036809815951,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.49693251533742,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 112.26993865030674,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 112.63803680981594,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 112.91411042944785,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.28220858895705,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 110.79754601226993,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 111.16564417177914,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 111.53374233128834,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 111.90184049079754,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.77300613496932,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 115.21472392638036,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 115.58282208588956,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 115.95092024539876,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 116.31901840490796,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 116.50306748466257,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 116.87116564417177,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 117.05521472392637,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 117.42331288343557,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 117.79141104294479,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 118.34355828220859,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 118.52760736196319,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 118.43558282208589,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 118.8957055214724,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 119.2638036809816,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.0920245398773,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.1840490797546,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.2760736196319,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.4601226993865,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.3680981595092,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.5521472392638,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.6441717791411,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.7361963190184,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 121.56441717791411,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 121.56441717791411,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 121.56441717791411,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 121.84049079754601,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 122.48466257668711,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 122.76073619631902,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 122.94478527607362,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 123.22085889570552,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 123.31288343558282,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 123.49693251533742,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 123.12883435582822,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 123.68098159509202,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.04907975460122,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.04907975460122,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.04907975460122,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.41717791411043,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.41717791411043,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.41717791411043,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.78527607361963,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.78527607361963,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.78527607361963,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.15337423312883,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.15337423312883,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.15337423312883,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.15337423312883,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.15337423312883,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.52147239263803,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.52147239263803,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.52147239263803,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.52147239263803,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.88957055214723,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.88957055214723,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.88957055214723,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 125.88957055214723,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 126.25766871165644,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 126.25766871165644,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 126.25766871165644,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 126.25766871165644,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 126.62576687116564,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 126.62576687116564,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 126.62576687116564,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 126.62576687116564,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 127.36196319018404,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 127.36196319018404,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 127.36196319018404,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 127.36196319018404,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 127.73006134969324,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 127.75306748466257,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 127.7760736196319,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.04907975460122,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.41717791411043,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 124.78527607361963,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 128.28220858895705,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 128.65030674846625,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 128.83435582822085,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 131.59509202453987,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.73006134969324,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.63803680981594,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.82208588957054,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.19018404907975,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.73006134969324,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.73006134969324,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.73006134969324,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 84.66257668711656,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 84.75460122699386,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 84.66257668711656,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 84.75460122699386,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.5935582822086,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.57055214723925,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.93865030674846,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 130.12269938650306,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.75460122699386,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.7776073619632,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.9616564417178,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 130.1457055214724,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 130.30674846625766,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 131.04294478527606,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 44.9079754601227,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 46.012269938650306,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 46.56441717791411,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 47.94478527607362,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 48.03680981595092,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.06748466257669,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 72.88343558282209,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.43558282208589,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.34355828220859,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.15950920245399,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 73.52760736196319,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 44.9079754601227,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 45.0920245398773,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 45.644171779141104,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 46.012269938650306,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 46.38036809815951,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 46.74846625766871,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 47.11656441717791,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 47.852760736196316,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 48.22085889570552,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 47.484662576687114,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 48.95705521472392,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 49.325153374233125,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 48.95705521472392,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 49.325153374233125,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 52.63803680981595,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 53.374233128834355,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 53.74233128834356,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 54.11042944785276,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 54.84662576687116,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 55.214723926380366,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 56.31901840490797,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 56.13496932515337,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 55.95092024539877,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.23926380368098,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.055214723926376,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 56.871165644171775,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 56.687116564417174,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.97546012269938,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 57.79141104294478,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 68.46625766871165,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 68.46625766871165,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 68.46625766871165,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 68.83435582822085,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 68.83435582822085,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.12269938650306,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 69.93865030674846,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.49079754601226,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.85889570552148,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.85889570552148,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.85889570552148,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 70.85889570552148,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.96319018404908,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.96319018404908,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 71.96319018404908,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.8680981595092,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.8680981595092,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.8680981595092,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 82.8680981595092,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.0521472392638,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.0521472392638,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.0521472392638,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.0521472392638,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.2361963190184,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.2361963190184,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.2361963190184,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 83.2361963190184,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.03067484662576,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.03067484662576,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.03067484662576,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.21472392638036,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 85.21472392638036,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 80.15337423312883,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 80.15337423312883,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 80.06134969325153,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 80.06134969325153,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.95705521472392,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.95705521472392,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.77300613496932,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.77300613496932,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.49693251533742,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 108.49693251533742,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.46625766871165,
+      "Lane": 2,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.55828220858895,
+      "Lane": 1,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.37423312883435,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 113.420245398773,
+      "Lane": 3,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.1840490797546,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.2760736196319,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.4601226993865,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.5521472392638,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 120.6441717791411,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 115.21472392638036,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 116.31901840490796,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 115.58282208588956,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 115.95092024539876,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 116.68711656441717,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 117.05521472392637,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 117.42331288343557,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 117.79141104294479,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 118.15950920245399,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 118.52760736196319,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 118.8957055214724,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 119.2638036809816,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 128.09815950920245,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 128.09815950920245,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 128.46625766871165,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 128.46625766871165,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 128.83435582822085,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 128.83435582822085,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.20245398773005,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.57055214723925,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.93865030674846,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 129.93865030674846,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 130.30674846625766,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 130.67484662576686,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 131.04294478527606,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 131.04294478527606,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 131.68711656441718,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 131.96319018404907,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 131.96319018404907,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 131.96319018404907,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.14723926380367,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.14723926380367,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.14723926380367,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.33128834355827,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.33128834355827,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.33128834355827,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.51533742331287,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.51533742331287,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.51533742331287,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.51533742331287,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.33128834355827,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.14723926380367,
+      "Lane": 4,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 131.96319018404907,
+      "Lane": 0,
+      "Type": 0,
+      "NoteToolName": "Normal 노트 1",
+      "NoteToolColor": "#C8960F",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 132.88343558282207,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 133.25153374233128,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 133.61963190184048,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 133.98773006134968,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 135.0920245398773,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 137.1165644171779,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 137.1165644171779,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 137.1165644171779,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 137.1165644171779,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 134.53987730061348,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 135.6441717791411,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 136.3803680981595,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 136.3803680981595,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 122.57668711656441,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 122.57668711656441,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 122.94478527607362,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 123.31288343558282,
+      "Lane": 1,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 123.31288343558282,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 122.94478527607362,
+      "Lane": 4,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 51.90184049079755,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 51.16564417177914,
+      "Lane": 3,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 52.26993865030675,
+      "Lane": 2,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    },
+    {
+      "Time": 54.47852760736196,
+      "Lane": 0,
+      "Type": 1,
+      "NoteToolName": "Attack 노트 1",
+      "NoteToolColor": "#FF0100",
+      "NoteToolIndex": 0
+    }
+  ],
+  "NormalNoteTools": [
+    {
+      "Name": "Normal 노트 1",
+      "Color": "#C8960F",
+      "Type": 0
+    },
+    {
+      "Name": "Normal 노트 2",
+      "Color": "#FF0000",
+      "Type": 0
+    }
+  ],
+  "AttackNoteTools": [
+    {
+      "Name": "Attack 노트 1",
+      "Color": "#FF0100",
+      "Type": 1
+    }
+  ],
+  "TriggerNoteTools": [
+    {
+      "Name": "Trigger 노트 1",
+      "Color": "#800080",
+      "Type": 2
+    },
+    {
+      "Name": "Trigger 노트 2",
+      "Color": "#800080",
+      "Type": 2
+    }
+  ]
+}
