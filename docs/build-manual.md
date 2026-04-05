@@ -53,6 +53,11 @@ Windows:
 .venv\Scripts\pyinstaller.exe packaging\new_editor.spec
 ```
 
+If you want a one-command build with artifact staging, use:
+
+- macOS: `scripts/build-macos.sh`
+- Windows: `scripts/build-windows.ps1`
+
 Expected output folders:
 
 - `build/new_editor/`

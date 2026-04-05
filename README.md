@@ -142,6 +142,7 @@ gh release upload v0.1.0 release-artifacts/v0.1.0/linux/parry-warrior-editor-lin
 
 - `docs/gui-run-manual.md`
 - `docs/build-manual.md`
+- `docs/build-scripts-guide.md`
 - `docs/github-release-guide.md`
 - `docs/legacy-editor-analysis.md`
 - `docs/legacy-feature-parity-checklist.md`
