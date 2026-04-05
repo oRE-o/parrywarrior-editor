@@ -1,5 +1,5 @@
 {
-    "song_path": "C:\\Users\\HAJE\\oreo\\python-rhythm-editor\\AKAGE [\u8d64\u6bdb].mp3",
+    "song_path": "songs/demo-song.mp3",
     "bpm": 120.0,
     "offset_ms": 0,
     "num_lanes": 4,

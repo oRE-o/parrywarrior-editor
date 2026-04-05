@@ -1,5 +1,5 @@
 {
-    "song_path": "C:\\Users\\HAJE\\oreo\\python-rhythm-editor\\mysong.wav",
+    "song_path": "songs/demo-song.wav",
     "bpm": 163.0,
     "offset_ms": 0,
     "num_lanes": 4,
