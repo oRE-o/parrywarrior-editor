@@ -1,7 +1,2 @@
-﻿pygame-ce
-pygame-gui
-librosa
-numpy
-soundfile
-scipy
-audioread
+PySide6>=6.7,<7
+imageio-ffmpeg>=0.6,<1
