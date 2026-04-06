@@ -674,7 +674,7 @@ class InspectorPanel(QWidget):
         current_item = self.note_type_list.currentItem()
         if current_item is not None:
             note_type_name = current_item.data(Qt.ItemDataRole.UserRole)
-            if isinstance(note_type_name, str) and note_type_name:
+            if isinstance(note_type_name, str) and note_type_name in self._chart.note_types:
                 return note_type_name
         if self._tool_state.current_note_type_name in self._chart.note_types:
             return self._tool_state.current_note_type_name
