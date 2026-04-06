@@ -30,13 +30,12 @@ pip install --upgrade pip
 pip install -r requirements-dev.txt
 ```
 
-Windows PowerShell:
+Windows (`cmd.exe`):
 
-```powershell
+```bat
 py -3 -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements-dev.txt
+.venv\Scripts\python.exe -m pip install --upgrade pip
+.venv\Scripts\pip.exe install -r requirements-dev.txt
 ```
 
 ## 2. Build command
@@ -49,14 +48,14 @@ Use the root packaging spec:
 
 Windows:
 
-```powershell
+```bat
 .venv\Scripts\pyinstaller.exe packaging\new_editor.spec
 ```
 
 If you want a one-command build with artifact staging, use:
 
 - macOS: `scripts/build-macos.sh`
-- Windows: `scripts/build-windows.ps1`
+- Windows: `scripts\build-windows.bat`
 
 Expected output folders:
 

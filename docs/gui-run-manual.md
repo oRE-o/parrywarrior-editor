@@ -15,13 +15,12 @@ pip install --upgrade pip
 pip install -r requirements-dev.txt
 ```
 
-On Windows PowerShell:
+On Windows (`cmd.exe`):
 
-```powershell
+```bat
 py -3 -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements-dev.txt
+.venv\Scripts\python.exe -m pip install --upgrade pip
+.venv\Scripts\pip.exe install -r requirements-dev.txt
 ```
 
 ## 2. Pretendard font
@@ -48,7 +47,7 @@ From the repository root:
 
 On Windows:
 
-```powershell
+```bat
 .venv\Scripts\python.exe src\new_editor\app.py
 ```
 
@@ -150,10 +149,22 @@ Run tests:
 .venv/bin/python -m pytest tests/new_editor
 ```
 
+Windows (`cmd.exe`):
+
+```bat
+.venv\Scripts\python.exe -m pytest tests\new_editor
+```
+
 Compile check:
 
 ```bash
 .venv/bin/python -m compileall src/new_editor tests/new_editor legacy/pygame_editor/src
+```
+
+Windows (`cmd.exe`):
+
+```bat
+.venv\Scripts\python.exe -m compileall src\new_editor tests\new_editor legacy\pygame_editor\src
 ```
 
 ## 7. Known current limitations

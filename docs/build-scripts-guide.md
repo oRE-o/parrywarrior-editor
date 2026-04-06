@@ -32,13 +32,12 @@ chmod +x scripts/build-macos.sh
 
 스크립트:
 
-- `scripts/build-windows.ps1`
+- `scripts/build-windows.bat`
 
 실행:
 
-```powershell
-Set-ExecutionPolicy -Scope Process Bypass
-.\scripts\build-windows.ps1
+```bat
+scripts\build-windows.bat
 ```
 
 결과물:

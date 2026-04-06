@@ -23,13 +23,12 @@ pip install -r requirements-dev.txt
 .venv/bin/python src/new_editor/app.py
 ```
 
-### Windows PowerShell
+### Windows (cmd.exe)
 
-```powershell
+```bat
 py -3 -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements-dev.txt
+.venv\Scripts\python.exe -m pip install --upgrade pip
+.venv\Scripts\pip.exe install -r requirements-dev.txt
 .venv\Scripts\python.exe src\new_editor\app.py
 ```
 
@@ -50,17 +49,15 @@ pip install -r requirements-dev.txt
 
 ### Windows에서 exe 빌드
 
-```powershell
-py -3 -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-pip install -r requirements-dev.txt
-.venv\Scripts\pyinstaller.exe packaging\new_editor.spec
+```bat
+scripts\build-windows.bat
 ```
 
 결과물 예시:
 
 - `dist/parry-warrior-editor/`
+- `release-artifacts/current/windows/parry-warrior-editor-win64/`
+- `release-artifacts/current/windows/parry-warrior-editor-win64.zip`
 
 ### macOS에서 실행 번들 빌드
 
