@@ -2,12 +2,31 @@ from __future__ import annotations
 
 from bisect import bisect_right
 from pathlib import Path
+import sys
 
 from .models import Chart
 
 
+_SHARED_HITSOUND_RELATIVE_PATH = Path("legacy") / "pygame_editor" / "assets" / "hitsound.wav"
+
+
+def _hitsound_search_roots() -> tuple[Path, ...]:
+    roots: list[Path] = []
+    meipass = getattr(sys, "_MEIPASS", None)
+    if meipass:
+        roots.append(Path(str(meipass)))
+    roots.append(Path(__file__).resolve().parents[3])
+    return tuple(roots)
+
+
 def default_hitsound_path() -> Path:
-    return Path(__file__).resolve().parents[3] / "legacy" / "pygame_editor" / "assets" / "hitsound.wav"
+    candidates: list[Path] = []
+    for root in _hitsound_search_roots():
+        candidate = root / _SHARED_HITSOUND_RELATIVE_PATH
+        candidates.append(candidate)
+        if candidate.exists():
+            return candidate
+    return candidates[-1]
 
 
 def hitsound_crossings(chart: Chart, previous_note_time_ms: float, current_note_time_ms: float) -> tuple[float, ...]:

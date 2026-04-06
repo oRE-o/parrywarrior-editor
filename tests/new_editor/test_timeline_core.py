@@ -172,7 +172,29 @@ class TimelineCoreTests(unittest.TestCase):
         self.assertTrue(handled)
         self.assertEqual(len(session.chart.notes), 1)
         self.assertEqual(session.chart.notes[0].lane, 0)
-        self.assertEqual(session.chart.notes[0].time_ms, 250.0)
+        self.assertEqual(session.chart.notes[0].time_ms, 125.0)
+
+    def test_quick_edit_tap_applies_input_correction_before_snapping(self) -> None:
+        session = EditorSession()
+        session.set_quick_edit_enabled(True)
+        session.seek_song(160.0)
+
+        handled = session.handle_quick_edit_key_press("d")
+
+        self.assertTrue(handled)
+        self.assertEqual(len(session.chart.notes), 1)
+        self.assertEqual(session.chart.notes[0].time_ms, 125.0)
+
+    def test_quick_edit_correction_does_not_push_very_early_input_below_zero(self) -> None:
+        session = EditorSession()
+        session.set_quick_edit_enabled(True)
+        session.seek_song(20.0)
+
+        handled = session.handle_quick_edit_key_press("d")
+
+        self.assertTrue(handled)
+        self.assertEqual(len(session.chart.notes), 1)
+        self.assertEqual(session.chart.notes[0].time_ms, 0.0)
 
     def test_quick_edit_can_insert_same_time_chord_across_lanes(self) -> None:
         session = EditorSession()
@@ -205,6 +227,21 @@ class TimelineCoreTests(unittest.TestCase):
             [(0, 500.0, 1000.0), (3, 500.0, 1000.0)],
         )
         self.assertEqual(session.timeline_state.pending_long_notes, ())
+
+    def test_quick_edit_long_note_release_applies_input_correction_before_snapping(self) -> None:
+        session = EditorSession()
+        session.set_current_note_type("Long")
+        session.set_quick_edit_enabled(True)
+        session.seek_song(500.0)
+
+        self.assertTrue(session.handle_quick_edit_key_press("d"))
+
+        session.seek_song(540.0)
+        self.assertTrue(session.handle_quick_edit_key_release("d"))
+
+        self.assertEqual(len(session.chart.notes), 1)
+        self.assertEqual(session.chart.notes[0].time_ms, 500.0)
+        self.assertIsNone(session.chart.notes[0].end_time_ms)
 
     def test_quick_edit_shared_center_key_waits_for_all_aliases_to_release(self) -> None:
         session = EditorSession()

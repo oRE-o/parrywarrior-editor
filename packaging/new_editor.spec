@@ -7,6 +7,12 @@ from PyInstaller.utils.hooks import collect_data_files, collect_submodules
 PROJECT_ROOT = Path(SPECPATH).resolve().parent
 
 datas = collect_data_files("imageio_ffmpeg")
+datas += [
+    (
+        str(PROJECT_ROOT / "legacy" / "pygame_editor" / "assets" / "hitsound.wav"),
+        str(Path("legacy") / "pygame_editor" / "assets"),
+    )
+]
 hiddenimports = collect_submodules("imageio_ffmpeg")
 
 a = Analysis(

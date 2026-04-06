@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from unittest.mock import patch
 
 from src.new_editor.core.hitsounds import (
     build_hitsound_event_times,
@@ -72,6 +75,24 @@ class HitsoundLogicTests(unittest.TestCase):
 
         self.assertEqual(hitsound_path.name, "hitsound.wav")
         self.assertIn("legacy/pygame_editor/assets", hitsound_path.as_posix())
+
+    def test_default_hitsound_path_prefers_bundled_asset_when_available(self) -> None:
+        with TemporaryDirectory() as tmpdir:
+            bundled_hitsound_path = Path(tmpdir) / "legacy" / "pygame_editor" / "assets" / "hitsound.wav"
+            bundled_hitsound_path.parent.mkdir(parents=True, exist_ok=True)
+            bundled_hitsound_path.write_bytes(b"RIFF")
+
+            with patch("sys._MEIPASS", tmpdir, create=True):
+                self.assertEqual(default_hitsound_path(), bundled_hitsound_path)
+
+    def test_default_hitsound_path_falls_back_to_source_asset_when_bundled_file_is_missing(self) -> None:
+        with TemporaryDirectory() as tmpdir:
+            with patch("sys._MEIPASS", tmpdir, create=True):
+                hitsound_path = default_hitsound_path()
+
+        self.assertEqual(hitsound_path.name, "hitsound.wav")
+        self.assertIn("legacy/pygame_editor/assets", hitsound_path.as_posix())
+        self.assertNotIn(tmpdir, str(hitsound_path))
 
     def test_hitsound_status_text_is_truthful_when_missing(self) -> None:
         status = hitsound_status_text(source_path="/tmp/missing.wav", is_ready=False, error_message="missing on disk")

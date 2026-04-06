@@ -71,6 +71,9 @@ from ..services.session_io import (
 )
 
 
+DEFAULT_QUICK_EDIT_INPUT_CORRECTION_MS = 35.0
+
+
 class EditorSession(QObject):
     chart_changed = Signal(object, bool)
     timeline_state_changed = Signal(object)
@@ -543,7 +546,7 @@ class EditorSession(QObject):
             lane,
             snapped_chart_time_ms(
                 self._chart,
-                float(self._media_session.state.position_ms),
+                self._quick_edit_sample_audio_time_ms(),
                 state_with_active_key.snap_division,
             ),
         )
@@ -575,7 +578,7 @@ class EditorSession(QObject):
             lane,
             snapped_chart_time_ms(
                 self._chart,
-                float(self._media_session.state.position_ms),
+                self._quick_edit_sample_audio_time_ms(),
                 state_without_active_key.snap_division,
             ),
         )
@@ -748,6 +751,9 @@ class EditorSession(QObject):
 
     def _current_note_time_ms(self) -> float:
         return float(self._media_session.state.position_ms) + self._chart.offset_ms
+
+    def _quick_edit_sample_audio_time_ms(self) -> float:
+        return max(0.0, float(self._media_session.state.position_ms) - DEFAULT_QUICK_EDIT_INPUT_CORRECTION_MS)
 
     def _sync_last_played_note_time(self) -> None:
         self._last_played_note_time_ms = self._current_note_time_ms()
