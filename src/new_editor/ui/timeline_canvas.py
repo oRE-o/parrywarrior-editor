@@ -25,6 +25,7 @@ from .tokens import PALETTE, RADII, SPACE, color_to_hex
 
 
 TimelineClickHandler = Callable[[float, float, int, int], None]
+TimelineHoverHandler = Callable[[float, float, int, int], None]
 TimelineScrubHandler = Callable[[float, bool, bool], None]
 TimelineNudgeHandler = Callable[[float], None]
 
@@ -47,6 +48,7 @@ class TimelineCanvasWidget(QWidget):
 
         self._primary_click_handler: TimelineClickHandler | None = None
         self._secondary_click_handler: TimelineClickHandler | None = None
+        self._hover_handler: TimelineHoverHandler | None = None
         self._scrub_handler: TimelineScrubHandler | None = None
         self._nudge_handler: TimelineNudgeHandler | None = None
 
@@ -58,11 +60,13 @@ class TimelineCanvasWidget(QWidget):
         *,
         primary_click: TimelineClickHandler,
         secondary_click: TimelineClickHandler,
+        hover: TimelineHoverHandler,
         scrub: TimelineScrubHandler,
         nudge: TimelineNudgeHandler,
     ) -> None:
         self._primary_click_handler = primary_click
         self._secondary_click_handler = secondary_click
+        self._hover_handler = hover
         self._scrub_handler = scrub
         self._nudge_handler = nudge
 
@@ -133,7 +137,10 @@ class TimelineCanvasWidget(QWidget):
 
     def mouseMoveEvent(self, event: QMouseEvent) -> None:
         hovered_y = self._clamp_y(float(event.position().y()))
-        self._hover_position = (float(event.position().x()), hovered_y)
+        hovered_x = float(event.position().x())
+        self._hover_position = (hovered_x, hovered_y)
+        if self._hover_handler is not None:
+            self._hover_handler(hovered_x, hovered_y, self.width(), self.height())
         if self._tool_state.pending_long_note is not None:
             self._preview_mouse_y = hovered_y
         self.update()
@@ -171,10 +178,13 @@ class TimelineCanvasWidget(QWidget):
 
         current_note_time_ms = self._current_note_time_ms()
         self._draw_grid(painter, lane_start_x, lane_end_x, current_note_time_ms)
+        self._draw_selection_range(painter, lane_start_x, lane_end_x, current_note_time_ms)
         self._draw_lane_boundaries(painter, lane_start_x)
         self._draw_notes(painter, current_note_time_ms)
         self._draw_hover_placement_preview(painter, current_note_time_ms)
         self._draw_pending_long_preview(painter, current_note_time_ms)
+        self._draw_quick_edit_pending_long_previews(painter, current_note_time_ms)
+        self._draw_paste_marker(painter, lane_start_x, lane_end_x, current_note_time_ms)
         self._draw_playhead(painter, lane_start_x, lane_end_x, current_note_time_ms)
         self._draw_judgment_line(painter, lane_start_x, lane_end_x)
 
@@ -304,8 +314,74 @@ class TimelineCanvasWidget(QWidget):
         painter.setBrush(preview_color)
         painter.drawRect(preview_rect)
 
+    def _draw_quick_edit_pending_long_previews(self, painter: QPainter, current_note_time_ms: float) -> None:
+        if not self._tool_state.quick_edit_enabled:
+            return
+        for pending_long_note in self._tool_state.pending_long_notes:
+            note_type = self._chart.note_types.get(pending_long_note.type_name)
+            if note_type is None:
+                continue
+
+            start_y = time_to_screen_y(pending_long_note.time_ms, current_note_time_ms, self.height(), self._timeline_geometry)
+            current_y = time_to_screen_y(current_note_time_ms, current_note_time_ms, self.height(), self._timeline_geometry)
+            preview_rect = QRectF(
+                self._lane_x(pending_long_note.lane) + 1.0,
+                min(start_y, current_y),
+                self._timeline_geometry.lane_width_pixels - 2.0,
+                max(1.0, abs(start_y - current_y)),
+            )
+            preview_color = QColor(color_to_hex(note_type.color))
+            preview_color.setAlpha(128)
+            outline_color = QColor(color_to_hex(note_type.color))
+            outline_color.setAlpha(220)
+            painter.setPen(QPen(outline_color, 1.0, Qt.PenStyle.DashLine))
+            painter.setBrush(preview_color)
+            painter.drawRect(preview_rect)
+
+    def _draw_selection_range(
+        self,
+        painter: QPainter,
+        lane_start_x: float,
+        lane_end_x: float,
+        current_note_time_ms: float,
+    ) -> None:
+        selection_range = self._tool_state.selection_range
+        if not self._tool_state.quick_edit_enabled or selection_range is None or lane_end_x <= lane_start_x:
+            return
+
+        start_y = time_to_screen_y(selection_range.start_time_ms, current_note_time_ms, self.height(), self._timeline_geometry)
+        end_y = time_to_screen_y(selection_range.end_time_ms, current_note_time_ms, self.height(), self._timeline_geometry)
+        selection_rect = QRectF(
+            lane_start_x + 1.0,
+            min(start_y, end_y),
+            max(0.0, lane_end_x - lane_start_x - 2.0),
+            max(1.0, abs(start_y - end_y)),
+        )
+        fill_color = QColor(PALETTE.accent_soft)
+        fill_color.setAlpha(132)
+        outline_color = QColor(PALETTE.accent_strong)
+        painter.setPen(QPen(outline_color, 1.0, Qt.PenStyle.DashLine))
+        painter.setBrush(fill_color)
+        painter.drawRect(selection_rect)
+
+    def _draw_paste_marker(
+        self,
+        painter: QPainter,
+        lane_start_x: float,
+        lane_end_x: float,
+        current_note_time_ms: float,
+    ) -> None:
+        paste_marker_time_ms = self._tool_state.paste_marker_time_ms
+        if not self._tool_state.quick_edit_enabled or paste_marker_time_ms is None or lane_end_x <= lane_start_x:
+            return
+        paste_marker_y = time_to_screen_y(paste_marker_time_ms, current_note_time_ms, self.height(), self._timeline_geometry)
+        painter.setPen(QPen(QColor(PALETTE.success), 2.0, Qt.PenStyle.DashLine))
+        painter.drawLine(QLineF(lane_start_x, paste_marker_y, lane_end_x, paste_marker_y))
+
     def _draw_hover_placement_preview(self, painter: QPainter, current_note_time_ms: float) -> None:
         if self._media_state.playback_state == PlaybackState.PLAYING:
+            return
+        if self._tool_state.quick_edit_enabled:
             return
         if self._tool_state.pending_long_note is not None:
             return

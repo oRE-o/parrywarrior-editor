@@ -41,12 +41,22 @@ from ..core.timeline import (
     TimelineGeometry,
     TimelineHit,
     TimelineToolState,
+    apply_paste_buffer,
+    build_copy_buffer,
     clamp_scale_pixels_per_ms,
     handle_primary_timeline_hit,
+    handle_quick_edit_press,
+    handle_quick_edit_release,
     handle_secondary_timeline_hit,
     normalize_current_note_type,
+    normalize_quick_edit_key,
+    normalize_selection_range,
+    quick_edit_lane_for_key,
+    quick_edit_lane_key_preset_for_lane_count,
+    rename_note_type_in_copy_buffer,
     resolve_timeline_hit,
     screen_y_to_time,
+    snapped_chart_time_ms,
 )
 from ..services.media_session import MediaSessionService
 from ..services.session_io import (
@@ -78,7 +88,11 @@ class EditorSession(QObject):
         self._autosave_notice_emitted = False
         self._autosave_count_for_dirty_cycle = 0
         self._timeline_geometry = TimelineGeometry()
-        self._timeline_state = TimelineToolState(current_note_type_name=normalize_current_note_type(self._chart))
+        self._quick_edit_selection_anchor_time_ms: float | None = None
+        self._timeline_state = TimelineToolState(
+            current_note_type_name=normalize_current_note_type(self._chart),
+            quick_edit_lane_key_preset=self._default_quick_edit_lane_key_preset_for_lane_count(self._chart.num_lanes),
+        )
         self._media_session = MediaSessionService()
         self._hitsound_event_times = build_hitsound_event_times(self._chart)
         self._last_played_note_time_ms = self._current_note_time_ms()
@@ -251,7 +265,10 @@ class EditorSession(QObject):
         self._media_session.seek(position_ms)
 
     def set_song_volume(self, volume: float) -> None:
-        self._media_session.set_volume(volume)
+        self._media_session.set_song_volume(volume)
+
+    def set_hitsound_volume(self, volume: float) -> None:
+        self._media_session.set_hitsound_volume(volume)
 
     def scrub_timeline_by_wheel(
         self,
@@ -309,8 +326,19 @@ class EditorSession(QObject):
         self._chart.num_lanes = safe_lane_count
 
         pending_long_note = self._timeline_state.pending_long_note
-        if pending_long_note is not None and pending_long_note.lane >= safe_lane_count:
-            self._set_timeline_state(replace(self._timeline_state, pending_long_note=None))
+        next_state = replace(
+            self._timeline_state,
+            quick_edit_lane_key_preset=self._default_quick_edit_lane_key_preset_for_lane_count(safe_lane_count),
+            pending_long_note=None if pending_long_note is not None and pending_long_note.lane >= safe_lane_count else pending_long_note,
+            pending_long_notes=tuple(
+                pending_quick_edit_long_note
+                for pending_quick_edit_long_note in self._timeline_state.pending_long_notes
+                if pending_quick_edit_long_note.lane < safe_lane_count
+            ),
+            active_quick_edit_keys=(),
+        )
+        self._quick_edit_selection_anchor_time_ms = None
+        self._set_timeline_state(next_state)
 
         self._mark_chart_edited()
 
@@ -328,6 +356,100 @@ class EditorSession(QObject):
     def set_current_note_type(self, note_type_name: str) -> None:
         normalized_name = normalize_current_note_type(self._chart, note_type_name)
         self._set_timeline_state(replace(self._timeline_state, current_note_type_name=normalized_name))
+
+    def set_quick_edit_enabled(self, enabled: bool) -> None:
+        safe_enabled = bool(enabled)
+        if self._timeline_state.quick_edit_enabled == safe_enabled and not (
+            not safe_enabled and (self._timeline_state.pending_long_notes or self._timeline_state.active_quick_edit_keys)
+        ):
+            return
+        self._quick_edit_selection_anchor_time_ms = None if not safe_enabled else self._quick_edit_selection_anchor_time_ms
+        self._set_timeline_state(
+            replace(
+                self._timeline_state,
+                quick_edit_enabled=safe_enabled,
+                pending_long_note=None,
+                pending_long_notes=() if not safe_enabled else self._timeline_state.pending_long_notes,
+                active_quick_edit_keys=() if not safe_enabled else self._timeline_state.active_quick_edit_keys,
+                selection_range=None if not safe_enabled else self._timeline_state.selection_range,
+                paste_marker_time_ms=None if not safe_enabled else self._timeline_state.paste_marker_time_ms,
+            )
+        )
+
+    def toggle_quick_edit_enabled(self) -> None:
+        self.set_quick_edit_enabled(not self._timeline_state.quick_edit_enabled)
+
+    def set_quick_edit_lane_key_preset(self, lane_key_preset: tuple[tuple[str, ...], ...]) -> None:
+        normalized_preset = self._normalize_quick_edit_lane_key_preset(lane_key_preset)
+        if self._timeline_state.quick_edit_lane_key_preset == normalized_preset:
+            return
+        self._quick_edit_selection_anchor_time_ms = None
+        self._set_timeline_state(
+            replace(
+                self._timeline_state,
+                quick_edit_lane_key_preset=normalized_preset,
+                pending_long_notes=(),
+                active_quick_edit_keys=(),
+            )
+        )
+
+    def set_selection_range(self, start_time_ms: float | None, end_time_ms: float | None) -> None:
+        self._set_timeline_state(
+            replace(self._timeline_state, selection_range=normalize_selection_range(start_time_ms, end_time_ms))
+        )
+
+    def clear_selection_range(self) -> None:
+        self.set_selection_range(None, None)
+
+    def copy_selection_range(self) -> int:
+        copy_buffer = build_copy_buffer(self._chart, self._timeline_state.selection_range)
+        self._set_timeline_state(replace(self._timeline_state, copy_buffer=copy_buffer))
+        copied_count = 0 if copy_buffer is None else len(copy_buffer.notes)
+        if copied_count <= 0:
+            self.status_message_requested.emit("복사할 선택 구간 노트가 없습니다.", 2500)
+            return 0
+        self.status_message_requested.emit(f"선택 구간의 노트 {copied_count}개를 복사했습니다.", 2500)
+        return copied_count
+
+    def set_paste_marker_time(self, time_ms: float | None, *, snap: bool = False) -> None:
+        paste_marker_time_ms: float | None
+        if time_ms is None:
+            paste_marker_time_ms = None
+        else:
+            paste_marker_time_ms = float(time_ms)
+            if snap:
+                paste_marker_time_ms = snapped_chart_time_ms(
+                    self._chart,
+                    paste_marker_time_ms - self._chart.offset_ms,
+                    self._timeline_state.snap_division,
+                )
+        self._set_timeline_state(replace(self._timeline_state, paste_marker_time_ms=paste_marker_time_ms))
+
+    def set_paste_marker_from_current_time(self) -> float:
+        paste_marker_time_ms = snapped_chart_time_ms(
+            self._chart,
+            float(self._media_session.state.position_ms),
+            self._timeline_state.snap_division,
+        )
+        self._set_timeline_state(replace(self._timeline_state, paste_marker_time_ms=paste_marker_time_ms))
+        return paste_marker_time_ms
+
+    def paste_copy_buffer(self) -> int:
+        original_note_count = len(self._chart.notes)
+        outcome = apply_paste_buffer(self._chart, self._timeline_state)
+        self._apply_timeline_outcome(outcome)
+        pasted_count = len(self._chart.notes) - original_note_count
+        if self._timeline_state.copy_buffer is None:
+            self.status_message_requested.emit("붙여넣을 복사 버퍼가 없습니다.", 2500)
+            return 0
+        if self._timeline_state.paste_marker_time_ms is None:
+            self.status_message_requested.emit("붙여넣기 기준 마커가 없습니다.", 2500)
+            return 0
+        if pasted_count <= 0:
+            self.status_message_requested.emit("중복 또는 충돌로 인해 새로 붙여넣은 노트가 없습니다.", 2500)
+            return 0
+        self.status_message_requested.emit(f"노트 {pasted_count}개를 붙여넣었습니다.", 2500)
+        return pasted_count
 
     def create_note_type(
         self,
@@ -369,6 +491,12 @@ class EditorSession(QObject):
             pending_long_note = self._timeline_state.pending_long_note
             if pending_long_note is not None and pending_long_note.type_name == note_type_name:
                 pending_long_note = replace(pending_long_note, type_name=renamed_note_type_name)
+            pending_long_notes = tuple(
+                replace(pending_quick_edit_long_note, type_name=renamed_note_type_name)
+                if pending_quick_edit_long_note.type_name == note_type_name
+                else pending_quick_edit_long_note
+                for pending_quick_edit_long_note in self._timeline_state.pending_long_notes
+            )
 
             current_note_type_name = self._timeline_state.current_note_type_name
             if current_note_type_name == note_type_name:
@@ -379,9 +507,80 @@ class EditorSession(QObject):
                     self._timeline_state,
                     current_note_type_name=current_note_type_name,
                     pending_long_note=pending_long_note,
+                    pending_long_notes=pending_long_notes,
+                    copy_buffer=rename_note_type_in_copy_buffer(
+                        self._timeline_state.copy_buffer,
+                        note_type_name,
+                        renamed_note_type_name,
+                    ),
                 )
             )
         self._mark_chart_edited()
+
+    def handle_quick_edit_key_press(self, key: str) -> bool:
+        if not self._timeline_state.quick_edit_enabled:
+            return False
+        normalized_key = normalize_quick_edit_key(key)
+        if not normalized_key:
+            return False
+        lane = quick_edit_lane_for_key(self._timeline_state, normalized_key)
+        if lane is None:
+            return False
+        if normalized_key in self._timeline_state.active_quick_edit_keys:
+            return True
+
+        state_with_active_key = replace(
+            self._timeline_state,
+            active_quick_edit_keys=tuple(sorted((*self._timeline_state.active_quick_edit_keys, normalized_key))),
+        )
+        if self._lane_has_active_quick_edit_key(state_with_active_key, lane, exclude_key=normalized_key):
+            self._set_timeline_state(state_with_active_key)
+            return True
+
+        outcome = handle_quick_edit_press(
+            self._chart,
+            state_with_active_key,
+            lane,
+            snapped_chart_time_ms(
+                self._chart,
+                float(self._media_session.state.position_ms),
+                state_with_active_key.snap_division,
+            ),
+        )
+        self._apply_timeline_outcome(outcome)
+        return True
+
+    def handle_quick_edit_key_release(self, key: str) -> bool:
+        normalized_key = normalize_quick_edit_key(key)
+        if not normalized_key:
+            return False
+        lane = quick_edit_lane_for_key(self._timeline_state, normalized_key)
+        if lane is None or normalized_key not in self._timeline_state.active_quick_edit_keys:
+            return False
+
+        remaining_active_keys = tuple(
+            active_key for active_key in self._timeline_state.active_quick_edit_keys if active_key != normalized_key
+        )
+        state_without_active_key = replace(self._timeline_state, active_quick_edit_keys=remaining_active_keys)
+        if self._lane_has_active_quick_edit_key(state_without_active_key, lane):
+            self._set_timeline_state(state_without_active_key)
+            return True
+        if not state_without_active_key.quick_edit_enabled:
+            self._set_timeline_state(state_without_active_key)
+            return True
+
+        outcome = handle_quick_edit_release(
+            self._chart,
+            state_without_active_key,
+            lane,
+            snapped_chart_time_ms(
+                self._chart,
+                float(self._media_session.state.position_ms),
+                state_without_active_key.snap_division,
+            ),
+        )
+        self._apply_timeline_outcome(outcome)
+        return True
 
     def handle_timeline_primary_click(
         self,
@@ -391,10 +590,40 @@ class EditorSession(QObject):
         panel_height: int,
     ) -> None:
         hit = self._resolve_timeline_hit(x_position, y_position, panel_width, panel_height)
+        if self._timeline_state.quick_edit_enabled and hit is None and self._quick_edit_selection_anchor_time_ms is not None:
+            self._quick_edit_selection_anchor_time_ms = None
+            self.clear_selection_range()
+            return
         if hit is None:
+            return
+        if self._timeline_state.quick_edit_enabled:
+            anchor_time_ms = self._quick_edit_selection_anchor_time_ms
+            if anchor_time_ms is None or self._timeline_state.selection_range is not None:
+                self._quick_edit_selection_anchor_time_ms = hit.snapped_time_ms
+                self.set_selection_range(hit.snapped_time_ms, hit.snapped_time_ms)
+                return
+            self._quick_edit_selection_anchor_time_ms = None
+            self.set_selection_range(anchor_time_ms, hit.snapped_time_ms)
             return
         outcome = handle_primary_timeline_hit(self._chart, self._timeline_state, hit)
         self._apply_timeline_outcome(outcome)
+
+    def handle_timeline_hover(
+        self,
+        x_position: float,
+        y_position: float,
+        panel_width: int,
+        panel_height: int,
+    ) -> None:
+        if not self._timeline_state.quick_edit_enabled:
+            return
+        anchor_time_ms = self._quick_edit_selection_anchor_time_ms
+        if anchor_time_ms is None:
+            return
+        hit = self._resolve_timeline_hit(x_position, y_position, panel_width, panel_height)
+        if hit is None:
+            return
+        self.set_selection_range(anchor_time_ms, hit.snapped_time_ms)
 
     def handle_timeline_secondary_click(
         self,
@@ -405,6 +634,9 @@ class EditorSession(QObject):
     ) -> None:
         hit = self._resolve_timeline_hit(x_position, y_position, panel_width, panel_height)
         if hit is None:
+            return
+        if self._timeline_state.quick_edit_enabled:
+            self.set_paste_marker_time(hit.snapped_time_ms)
             return
         outcome = handle_secondary_timeline_hit(self._chart, self._timeline_state, hit)
         self._apply_timeline_outcome(outcome)
@@ -464,10 +696,13 @@ class EditorSession(QObject):
         self.chart_changed.emit(self._chart, self._is_dirty)
 
     def _reset_timeline_state(self) -> None:
+        self._quick_edit_selection_anchor_time_ms = None
         self._set_timeline_state(
             TimelineToolState(
                 snap_division=self._timeline_state.snap_division,
                 current_note_type_name=normalize_current_note_type(self._chart, self._timeline_state.current_note_type_name),
+                quick_edit_enabled=self._timeline_state.quick_edit_enabled,
+                quick_edit_lane_key_preset=self._default_quick_edit_lane_key_preset_for_lane_count(self._chart.num_lanes),
             )
         )
 
@@ -516,3 +751,46 @@ class EditorSession(QObject):
 
     def _sync_last_played_note_time(self) -> None:
         self._last_played_note_time_ms = self._current_note_time_ms()
+
+    def _lane_has_active_quick_edit_key(self, tool_state: TimelineToolState, lane: int, *, exclude_key: str | None = None) -> bool:
+        for active_key in tool_state.active_quick_edit_keys:
+            if exclude_key is not None and active_key == exclude_key:
+                continue
+            if quick_edit_lane_for_key(tool_state, active_key) == lane:
+                return True
+        return False
+
+    def _default_quick_edit_lane_key_preset_for_lane_count(self, lane_count: int) -> tuple[tuple[str, ...], ...]:
+        return quick_edit_lane_key_preset_for_lane_count(lane_count)
+
+    def _normalize_quick_edit_lane_key_preset(
+        self,
+        lane_key_preset: tuple[tuple[str, ...], ...],
+    ) -> tuple[tuple[str, ...], ...]:
+        expected_lane_count = len(self._timeline_state.quick_edit_lane_key_preset)
+        if len(lane_key_preset) != expected_lane_count:
+            raise ValueError("Quick edit bindings must match the current lane count.")
+
+        normalized_preset: list[tuple[str, ...]] = []
+        assigned_keys: dict[str, int] = {}
+        reserved_keys = {"q"}
+        for lane_index, lane_keys in enumerate(lane_key_preset):
+            normalized_lane_keys: list[str] = []
+            for lane_key in lane_keys:
+                normalized_key = normalize_quick_edit_key(lane_key)
+                if not normalized_key or normalized_key in normalized_lane_keys:
+                    continue
+                if normalized_key in reserved_keys:
+                    reserved_label = normalized_key.upper()
+                    raise ValueError(f"{reserved_label} is reserved for editor shortcuts.")
+                assigned_lane = assigned_keys.get(normalized_key)
+                if assigned_lane is not None and assigned_lane != lane_index:
+                    raise ValueError(
+                        f"{normalized_key.upper()} is already assigned to lane {assigned_lane + 1}."
+                    )
+                assigned_keys[normalized_key] = lane_index
+                normalized_lane_keys.append(normalized_key)
+            if not normalized_lane_keys:
+                raise ValueError(f"Lane {lane_index + 1} needs a key binding.")
+            normalized_preset.append(tuple(normalized_lane_keys))
+        return tuple(normalized_preset)

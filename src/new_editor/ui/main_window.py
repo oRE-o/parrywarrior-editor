@@ -31,6 +31,19 @@ from .tokens import SHELL, SPACE, format_file_name
 AUTOSAVE_INTERVAL_MS = 30_000
 
 
+def _event_key_text(event: QKeyEvent) -> str:
+    if event.key() == Qt.Key.Key_Space:
+        return "space"
+    key_text = event.text()
+    if key_text:
+        return key_text
+    if Qt.Key.Key_A <= event.key() <= Qt.Key.Key_Z:
+        return chr(ord("a") + (event.key() - Qt.Key.Key_A))
+    if Qt.Key.Key_0 <= event.key() <= Qt.Key.Key_9:
+        return chr(ord("0") + (event.key() - Qt.Key.Key_0))
+    return ""
+
+
 class EditorMainWindow(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
@@ -132,6 +145,8 @@ class EditorMainWindow(QMainWindow):
             set_snap=self.session.set_snap_division,
             set_lanes=self.session.set_lane_count,
             set_scale=self.session.set_scale_pixels_per_ms,
+            toggle_quick_edit=self.session.toggle_quick_edit_enabled,
+            set_quick_edit_lane_key_preset=self.session.set_quick_edit_lane_key_preset,
             set_note_type=self.session.set_current_note_type,
             create_note_type=self.session.create_note_type,
             edit_note_type=self.session.update_note_type,
@@ -143,6 +158,7 @@ class EditorMainWindow(QMainWindow):
         self.timeline_panel.bind_actions(
             primary_click=self.session.handle_timeline_primary_click,
             secondary_click=self.session.handle_timeline_secondary_click,
+            hover=self.session.handle_timeline_hover,
             scrub=self.session.scrub_timeline_by_wheel,
             nudge=self.session.nudge_timeline,
         )
@@ -150,7 +166,8 @@ class EditorMainWindow(QMainWindow):
             play_pause=self.session.toggle_play_pause,
             stop=self.session.stop_song,
             seek=self.session.seek_song,
-            set_volume=self.session.set_song_volume,
+            set_song_volume=self.session.set_song_volume,
+            set_hitsound_volume=self.session.set_hitsound_volume,
         )
 
     def _connect_session(self) -> None:
@@ -175,11 +192,29 @@ class EditorMainWindow(QMainWindow):
             app.installEventFilter(self)
 
     def eventFilter(self, watched: QObject | None, event: QEvent) -> bool:
-        if event.type() != QEvent.Type.KeyPress or not self._should_handle_editor_shortcut():
+        event_type = event.type()
+        if event_type not in (QEvent.Type.KeyPress, QEvent.Type.KeyRelease) or not self._should_handle_editor_shortcut():
             return False if watched is None else super().eventFilter(watched, event)
         key_event = cast(QKeyEvent, event)
-        if key_event.key() == Qt.Key.Key_Space and key_event.modifiers() == Qt.KeyboardModifier.NoModifier and not key_event.isAutoRepeat():
+        modifiers = key_event.modifiers()
+        if modifiers == Qt.KeyboardModifier.ControlModifier and event_type == QEvent.Type.KeyPress and not key_event.isAutoRepeat():
+            if key_event.key() == Qt.Key.Key_C and self.session.timeline_state.quick_edit_enabled:
+                _ = self.session.copy_selection_range()
+                return True
+            if key_event.key() == Qt.Key.Key_V and self.session.timeline_state.quick_edit_enabled:
+                _ = self.session.paste_copy_buffer()
+                return True
+        if modifiers != Qt.KeyboardModifier.NoModifier:
+            return False if watched is None else super().eventFilter(watched, event)
+        if event_type == QEvent.Type.KeyPress and self.session.handle_quick_edit_key_press(_event_key_text(key_event)):
+            return True
+        if event_type == QEvent.Type.KeyRelease and self.session.handle_quick_edit_key_release(_event_key_text(key_event)):
+            return True
+        if event_type == QEvent.Type.KeyPress and key_event.key() == Qt.Key.Key_Space and not key_event.isAutoRepeat():
             self.session.toggle_play_pause()
+            return True
+        if event_type == QEvent.Type.KeyPress and key_event.key() == Qt.Key.Key_Q and not key_event.isAutoRepeat():
+            self.session.toggle_quick_edit_enabled()
             return True
         return False if watched is None else super().eventFilter(watched, event)
 

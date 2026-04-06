@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections.abc import Callable
 
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QColor
+from PySide6.QtGui import QColor, QKeyEvent
 from PySide6.QtWidgets import (
     QCheckBox,
     QComboBox,
@@ -54,6 +54,115 @@ from .tokens import PALETTE, SHELL, SPACE, color_to_hex, format_file_name
 def _set_label_role(label: QLabel, role: str) -> QLabel:
     _ = label.setProperty("role", role)
     return label
+
+
+def _format_quick_edit_lane_keys(lane_keys: tuple[str, ...]) -> str:
+    if not lane_keys:
+        return "Unbound"
+    formatted_keys = ["Space" if key == "space" else key.upper() for key in lane_keys]
+    return " / ".join(formatted_keys)
+
+
+class QuickEditSettingsDialog(QDialog):
+    def __init__(self, *, lane_key_preset: tuple[tuple[str, ...], ...], parent: QWidget | None = None) -> None:
+        super().__init__(parent)
+        self._lane_key_preset = [tuple(lane_keys) for lane_keys in lane_key_preset]
+        self._capture_lane_index: int | None = None
+        self._binding_buttons: list[QPushButton] = []
+
+        self.setModal(True)
+        self.setMinimumWidth(SPACE.xxl * 10)
+        self.setWindowTitle("빠른 편집 키 설정")
+
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(SPACE.lg, SPACE.lg, SPACE.lg, SPACE.lg)
+        layout.setSpacing(SPACE.md)
+
+        summary_label = QLabel("변경할 레인을 클릭한 뒤 원하는 키를 누르세요. Q는 빠른 편집 토글로 예약되어 있습니다.")
+        summary_label.setWordWrap(True)
+        layout.addWidget(_set_label_role(summary_label, "secondary"))
+
+        bindings_layout = QGridLayout()
+        bindings_layout.setContentsMargins(0, 0, 0, 0)
+        bindings_layout.setHorizontalSpacing(SPACE.sm)
+        bindings_layout.setVerticalSpacing(SPACE.sm)
+        for lane_index, lane_keys in enumerate(self._lane_key_preset):
+            lane_label = QLabel(f"레인 {lane_index + 1}")
+            binding_button = QPushButton(_format_quick_edit_lane_keys(lane_keys))
+            binding_button.clicked.connect(lambda _checked=False, selected_lane=lane_index: self._begin_key_capture(selected_lane))
+            self._binding_buttons.append(binding_button)
+            bindings_layout.addWidget(_set_label_role(lane_label, "secondary"), lane_index, 0)
+            bindings_layout.addWidget(binding_button, lane_index, 1)
+        layout.addLayout(bindings_layout)
+
+        self.status_label = QLabel("7레인 기본값에서는 Space를 4번 레인 입력으로 사용합니다.")
+        self.status_label.setWordWrap(True)
+        layout.addWidget(_set_label_role(self.status_label, "muted"))
+
+        button_box = QDialogButtonBox(QDialogButtonBox.StandardButton.Save | QDialogButtonBox.StandardButton.Cancel)
+        button_box.accepted.connect(self.accept)
+        button_box.rejected.connect(self.reject)
+        layout.addWidget(button_box)
+
+    def values(self) -> tuple[tuple[str, ...], ...]:
+        return tuple(self._lane_key_preset)
+
+    def keyPressEvent(self, event: QKeyEvent) -> None:
+        capture_lane_index = self._capture_lane_index
+        if capture_lane_index is None:
+            super().keyPressEvent(event)
+            return
+
+        if event.key() == Qt.Key.Key_Escape:
+            self._capture_lane_index = None
+            self.status_label.setText("키 변경을 취소했습니다.")
+            self._refresh_binding_buttons()
+            event.accept()
+            return
+
+        binding_key = self._binding_key_from_event(event)
+        if binding_key is None:
+            event.accept()
+            return
+
+        self._lane_key_preset[capture_lane_index] = (binding_key,)
+        self._capture_lane_index = None
+        self.status_label.setText(f"레인 {capture_lane_index + 1} 키를 {_format_quick_edit_lane_keys((binding_key,))}(으)로 변경했습니다.")
+        self._refresh_binding_buttons()
+        event.accept()
+
+    def _begin_key_capture(self, lane_index: int) -> None:
+        self._capture_lane_index = lane_index
+        self.status_label.setText(f"레인 {lane_index + 1}에 사용할 키를 누르세요. Esc로 취소할 수 있습니다.")
+        self.setFocus(Qt.FocusReason.ActiveWindowFocusReason)
+        self._refresh_binding_buttons()
+
+    def _refresh_binding_buttons(self) -> None:
+        for lane_index, binding_button in enumerate(self._binding_buttons):
+            if lane_index == self._capture_lane_index:
+                binding_button.setText("키 입력 대기 중…")
+                binding_button.setDown(True)
+                continue
+            binding_button.setDown(False)
+            binding_button.setText(_format_quick_edit_lane_keys(self._lane_key_preset[lane_index]))
+
+    def _binding_key_from_event(self, event: QKeyEvent) -> str | None:
+        if event.key() == Qt.Key.Key_Space:
+            return "space"
+        if event.key() in {
+            Qt.Key.Key_Shift,
+            Qt.Key.Key_Control,
+            Qt.Key.Key_Alt,
+            Qt.Key.Key_Meta,
+            Qt.Key.Key_AltGr,
+            Qt.Key.Key_CapsLock,
+            Qt.Key.Key_Tab,
+        }:
+            return None
+        key_text = event.text()
+        if len(key_text) != 1 or not key_text.isprintable():
+            return None
+        return key_text.lower()
 
 
 class NoteTypeEditorDialog(QDialog):
@@ -221,6 +330,7 @@ class PanelCard(QFrame):
 class OverviewPanel(QWidget):
     def __init__(self) -> None:
         super().__init__()
+        self._chart = Chart()
         self._media_state = MediaState()
 
         layout = QVBoxLayout(self)
@@ -250,6 +360,7 @@ class OverviewPanel(QWidget):
         self.waveform_preview.bind_actions(seek=seek_overview, nudge=nudge)
 
     def update_chart(self, chart: Chart, is_dirty: bool) -> None:
+        self._chart = chart
         song_name = format_file_name(chart.song_path, fallback="No song")
         chart_name = format_file_name(chart.chart_path, fallback="Untitled chart")
         self.song_label.setText(f"Song · {song_name}")
@@ -266,6 +377,9 @@ class OverviewPanel(QWidget):
 
     def update_timeline_geometry(self, timeline_geometry: TimelineGeometry) -> None:
         self.waveform_preview.set_timeline_geometry(timeline_geometry)
+
+    def update_timeline_state(self, tool_state: TimelineToolState) -> None:
+        del tool_state
 
 
 class TimelinePanel(QWidget):
@@ -308,10 +422,11 @@ class TimelinePanel(QWidget):
         self.workspace_card.body_layout.addLayout(self.info_grid)
         layout.addWidget(self.workspace_card, 1)
 
-    def bind_actions(self, *, primary_click, secondary_click, scrub, nudge) -> None:
+    def bind_actions(self, *, primary_click, secondary_click, hover, scrub, nudge) -> None:
         self.timeline_canvas.bind_actions(
             primary_click=primary_click,
             secondary_click=secondary_click,
+            hover=hover,
             scrub=scrub,
             nudge=nudge,
         )
@@ -351,6 +466,7 @@ class InspectorPanel(QWidget):
         self._chart = Chart()
         self._timeline_geometry = TimelineGeometry()
         self._tool_state = TimelineToolState()
+        self._set_quick_edit_lane_key_preset_handler: Callable[[tuple[tuple[str, ...], ...]], None] | None = None
         self._create_note_type_handler: Callable[..., None] | None = None
         self._edit_note_type_handler: Callable[..., None] | None = None
 
@@ -443,6 +559,26 @@ class InspectorPanel(QWidget):
         self.controls_card.body_layout.addWidget(_set_label_role(self.edit_state_label, "muted"))
         layout.addWidget(self.controls_card)
 
+        self.quick_edit_card = PanelCard("빠른 편집")
+        quick_edit_actions = QHBoxLayout()
+        quick_edit_actions.setContentsMargins(0, 0, 0, 0)
+        quick_edit_actions.setSpacing(SPACE.sm)
+        self.quick_edit_toggle_button = QPushButton("빠른 편집 · 꺼짐")
+        self.quick_edit_toggle_button.setCheckable(True)
+        self.quick_edit_toggle_button.setToolTip("단축키 · Q")
+        self.quick_edit_bindings_button = QPushButton("키 설정…")
+        quick_edit_actions.addWidget(self.quick_edit_toggle_button, 1)
+        quick_edit_actions.addWidget(self.quick_edit_bindings_button)
+        self.quick_edit_card.body_layout.addLayout(quick_edit_actions)
+
+        self.quick_edit_status_label = QLabel("꺼짐 · Q로 빠른 편집 전환")
+        self.quick_edit_status_label.setWordWrap(True)
+        self.quick_edit_bindings_label = QLabel("키 설정 · 없음")
+        self.quick_edit_bindings_label.setWordWrap(True)
+        self.quick_edit_card.body_layout.addWidget(_set_label_role(self.quick_edit_status_label, "secondary"))
+        self.quick_edit_card.body_layout.addWidget(_set_label_role(self.quick_edit_bindings_label, "muted"))
+        layout.addWidget(self.quick_edit_card)
+
         self.note_types_card = PanelCard("Note Types")
 
         self.note_type_list = QListWidget()
@@ -480,10 +616,13 @@ class InspectorPanel(QWidget):
         set_snap,
         set_lanes,
         set_scale,
+        toggle_quick_edit,
+        set_quick_edit_lane_key_preset,
         set_note_type,
         create_note_type,
         edit_note_type,
     ) -> None:
+        self._set_quick_edit_lane_key_preset_handler = set_quick_edit_lane_key_preset
         self._create_note_type_handler = create_note_type
         self._edit_note_type_handler = edit_note_type
         self.bpm_spin.valueChanged.connect(set_bpm)
@@ -491,6 +630,8 @@ class InspectorPanel(QWidget):
         self.snap_combo.currentTextChanged.connect(lambda text: text and set_snap(int(text)))
         self.lane_combo.currentTextChanged.connect(lambda text: text and set_lanes(int(text)))
         self.scroll_speed_slider.valueChanged.connect(lambda value: set_scale(float(value) / 100.0))
+        self.quick_edit_toggle_button.clicked.connect(lambda _checked=False: toggle_quick_edit())
+        self.quick_edit_bindings_button.clicked.connect(self._open_quick_edit_settings_dialog)
         self.note_type_list.itemSelectionChanged.connect(lambda: self._notify_note_type_selection(set_note_type))
         self.note_type_list.itemSelectionChanged.connect(self._refresh_note_type_actions)
         self.new_note_type_button.clicked.connect(self._open_create_note_type_dialog)
@@ -530,6 +671,7 @@ class InspectorPanel(QWidget):
         self.note_type_list.blockSignals(False)
         self._refresh_note_type_actions()
         self._refresh_note_type_details()
+        self._refresh_quick_edit_summary()
 
     def update_timeline_geometry(self, timeline_geometry: TimelineGeometry) -> None:
         self._timeline_geometry = timeline_geometry
@@ -542,9 +684,15 @@ class InspectorPanel(QWidget):
         self.snap_combo.setCurrentText(str(tool_state.snap_division))
         self.snap_combo.blockSignals(False)
 
+        self.quick_edit_toggle_button.blockSignals(True)
+        self.quick_edit_toggle_button.setChecked(tool_state.quick_edit_enabled)
+        self.quick_edit_toggle_button.setText("빠른 편집 · 켜짐" if tool_state.quick_edit_enabled else "빠른 편집 · 꺼짐")
+        self.quick_edit_toggle_button.blockSignals(False)
+
         self._apply_selected_note_type()
         self._refresh_note_type_actions()
         self._refresh_note_type_details()
+        self._refresh_quick_edit_summary()
         pending_long_note = tool_state.pending_long_note
         if pending_long_note is None:
             self.edit_state_label.setText(f"Type {tool_state.current_note_type_name} · Long none")
@@ -582,6 +730,42 @@ class InspectorPanel(QWidget):
         self.scroll_speed_slider.setValue(int(round(scale_pixels_per_ms * 100.0)))
         self.scroll_speed_slider.blockSignals(False)
         self.scroll_speed_value_label.setText(f"{scale_pixels_per_ms:.2f}x")
+
+    def _open_quick_edit_settings_dialog(self) -> None:
+        if self._set_quick_edit_lane_key_preset_handler is None:
+            return
+        dialog = QuickEditSettingsDialog(lane_key_preset=self._tool_state.quick_edit_lane_key_preset, parent=self)
+        if dialog.exec() != QDialog.DialogCode.Accepted:
+            return
+        try:
+            self._set_quick_edit_lane_key_preset_handler(dialog.values())
+        except ValueError as exc:
+            _ = QMessageBox.warning(self, "빠른 편집 키 설정 변경 실패", str(exc))
+
+    def _refresh_quick_edit_summary(self) -> None:
+        tool_state = self._tool_state
+        if tool_state.quick_edit_enabled:
+            range_text = "구간 선택 대기"
+            selection_range = tool_state.selection_range
+            if selection_range is not None:
+                range_text = f"선택 {selection_range.start_time_ms:.0f}-{selection_range.end_time_ms:.0f} ms"
+            paste_text = "붙여넣기 마커 없음"
+            if tool_state.paste_marker_time_ms is not None:
+                paste_text = f"붙여넣기 {tool_state.paste_marker_time_ms:.0f} ms"
+            hold_text = f"홀드 {len(tool_state.pending_long_notes)}개"
+            self.quick_edit_status_label.setText(
+                f"켜짐 · 좌클릭 구간 선택 · 우클릭 붙여넣기 마커 · {range_text} · {paste_text} · {hold_text}"
+            )
+        else:
+            self.quick_edit_status_label.setText("꺼짐 · Q로 빠른 편집 전환")
+
+        visible_bindings = [
+            f"L{lane_index + 1} {_format_quick_edit_lane_keys(lane_keys)}"
+            for lane_index, lane_keys in enumerate(tool_state.quick_edit_lane_key_preset[: self._chart.num_lanes])
+        ]
+        self.quick_edit_bindings_label.setText(
+            "키 설정 · " + (" · ".join(visible_bindings) if visible_bindings else "없음")
+        )
 
     def _refresh_note_type_details(self) -> None:
         selected_name = self._selected_note_type_name()
@@ -713,29 +897,38 @@ class TransportPanel(QFrame):
         self.play_button.setEnabled(False)
         self.stop_button.setEnabled(False)
         self.time_label = QLabel("00:00.000 / 00:00.000")
-        self.volume_slider = QSlider(Qt.Orientation.Horizontal)
-        self.volume_slider.setRange(0, 100)
-        self.volume_slider.setValue(70)
-        self.volume_slider.setFixedWidth(120)
-        self.volume_label = QLabel("70")
+        self.song_volume_slider = QSlider(Qt.Orientation.Horizontal)
+        self.song_volume_slider.setRange(0, 100)
+        self.song_volume_slider.setValue(70)
+        self.song_volume_slider.setFixedWidth(100)
+        self.song_volume_label = QLabel("70")
+        self.hitsound_volume_slider = QSlider(Qt.Orientation.Horizontal)
+        self.hitsound_volume_slider.setRange(0, 100)
+        self.hitsound_volume_slider.setValue(35)
+        self.hitsound_volume_slider.setFixedWidth(100)
+        self.hitsound_volume_label = QLabel("35")
         self.seek_bar = TransportSeekBarWidget()
 
         controls_row.addStretch(1)
         controls_row.addWidget(self.play_button, 0, Qt.AlignmentFlag.AlignVCenter)
         controls_row.addWidget(self.stop_button, 0, Qt.AlignmentFlag.AlignVCenter)
-        controls_row.addWidget(_set_label_role(QLabel("Vol"), "muted"), 0, Qt.AlignmentFlag.AlignVCenter)
-        controls_row.addWidget(self.volume_slider, 0, Qt.AlignmentFlag.AlignVCenter)
-        controls_row.addWidget(_set_label_role(self.volume_label, "muted"), 0, Qt.AlignmentFlag.AlignVCenter)
+        controls_row.addWidget(_set_label_role(QLabel("Song"), "muted"), 0, Qt.AlignmentFlag.AlignVCenter)
+        controls_row.addWidget(self.song_volume_slider, 0, Qt.AlignmentFlag.AlignVCenter)
+        controls_row.addWidget(_set_label_role(self.song_volume_label, "muted"), 0, Qt.AlignmentFlag.AlignVCenter)
+        controls_row.addWidget(_set_label_role(QLabel("Hit"), "muted"), 0, Qt.AlignmentFlag.AlignVCenter)
+        controls_row.addWidget(self.hitsound_volume_slider, 0, Qt.AlignmentFlag.AlignVCenter)
+        controls_row.addWidget(_set_label_role(self.hitsound_volume_label, "muted"), 0, Qt.AlignmentFlag.AlignVCenter)
         controls_row.addWidget(_set_label_role(self.time_label, "section"), 0, Qt.AlignmentFlag.AlignVCenter)
         controls_row.addStretch(1)
         layout.addLayout(controls_row)
         layout.addWidget(self.seek_bar)
 
-    def bind_actions(self, *, play_pause, stop, seek, set_volume) -> None:
+    def bind_actions(self, *, play_pause, stop, seek, set_song_volume, set_hitsound_volume) -> None:
         self.play_button.clicked.connect(play_pause)
         self.stop_button.clicked.connect(stop)
         self.seek_bar.bind_actions(seek=seek)
-        self.volume_slider.valueChanged.connect(lambda value: set_volume(float(value) / 100.0))
+        self.song_volume_slider.valueChanged.connect(lambda value: set_song_volume(float(value) / 100.0))
+        self.hitsound_volume_slider.valueChanged.connect(lambda value: set_hitsound_volume(float(value) / 100.0))
 
     def update_chart(self, chart: Chart, _: bool) -> None:
         del chart
@@ -753,8 +946,13 @@ class TransportPanel(QFrame):
         self.play_button.setText("Pause" if self._media_state.playback_state == PlaybackState.PLAYING else "Play")
         self.play_button.setEnabled(self._media_state.can_play)
         self.stop_button.setEnabled(self._media_state.can_stop)
-        volume_percent = int(round(self._media_state.volume * 100.0))
-        self.volume_slider.blockSignals(True)
-        self.volume_slider.setValue(volume_percent)
-        self.volume_slider.blockSignals(False)
-        self.volume_label.setText(str(volume_percent))
+        song_volume_percent = int(round(self._media_state.volume * 100.0))
+        self.song_volume_slider.blockSignals(True)
+        self.song_volume_slider.setValue(song_volume_percent)
+        self.song_volume_slider.blockSignals(False)
+        self.song_volume_label.setText(str(song_volume_percent))
+        hitsound_volume_percent = int(round(self._media_state.hitsound_volume * 100.0))
+        self.hitsound_volume_slider.blockSignals(True)
+        self.hitsound_volume_slider.setValue(hitsound_volume_percent)
+        self.hitsound_volume_slider.blockSignals(False)
+        self.hitsound_volume_label.setText(str(hitsound_volume_percent))

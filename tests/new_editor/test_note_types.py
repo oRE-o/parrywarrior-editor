@@ -8,7 +8,7 @@ from pathlib import Path
 from src.new_editor.core.legacy_rules import make_pending_long_note
 from src.new_editor.core.models import Chart, Note
 from src.new_editor.core.note_types import create_note_type, update_note_type
-from src.new_editor.core.timeline import TimelineToolState
+from src.new_editor.core.timeline import TimelineCopiedNote, TimelineCopyBuffer, TimelineToolState
 from src.new_editor.ui.session import EditorSession
 
 
@@ -94,7 +94,20 @@ class NoteTypeLogicTests(unittest.TestCase):
             TimelineToolState(
                 snap_division=session.timeline_state.snap_division,
                 current_note_type_name="Long",
+                quick_edit_lane_key_preset=session.timeline_state.quick_edit_lane_key_preset,
                 pending_long_note=make_pending_long_note(500.0, 1, "Long"),
+                pending_long_notes=(make_pending_long_note(750.0, 2, "Long"),),
+                copy_buffer=TimelineCopyBuffer(
+                    source_start_time_ms=500.0,
+                    notes=(
+                        TimelineCopiedNote(
+                            time_offset_ms=0.0,
+                            lane=1,
+                            note_type_name="Long",
+                            end_time_offset_ms=250.0,
+                        ),
+                    ),
+                ),
             )
         )
 
@@ -110,6 +123,9 @@ class NoteTypeLogicTests(unittest.TestCase):
         self.assertIsNotNone(session.timeline_state.pending_long_note)
         assert session.timeline_state.pending_long_note is not None
         self.assertEqual(session.timeline_state.pending_long_note.type_name, "AA Long")
+        self.assertEqual(session.timeline_state.pending_long_notes[0].type_name, "AA Long")
+        assert session.timeline_state.copy_buffer is not None
+        self.assertEqual(session.timeline_state.copy_buffer.notes[0].note_type_name, "AA Long")
         self.assertIn("AA Long", session.chart.note_types)
         self.assertNotIn("Long", session.chart.note_types)
 
@@ -131,7 +147,7 @@ class NoteTypeLogicTests(unittest.TestCase):
 
         with tempfile.TemporaryDirectory() as tmpdir:
             legacy_path = Path(tmpdir) / "legacy_source.json"
-            legacy_path.write_text(
+            _ = legacy_path.write_text(
                 json.dumps(
                     {
                         "AudioFilePath": "songs/legacy.wav",
@@ -158,4 +174,4 @@ class NoteTypeLogicTests(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    _ = unittest.main()

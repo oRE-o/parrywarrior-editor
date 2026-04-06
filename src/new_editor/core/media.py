@@ -41,6 +41,7 @@ class MediaState:
     position_ms: int = 0
     duration_ms: int = 0
     volume: float = 0.7
+    hitsound_volume: float = 0.35
     waveform: WaveformData = field(default_factory=WaveformData)
     hitsound: HitsoundState = field(default_factory=HitsoundState)
     can_play: bool = False

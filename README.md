@@ -141,6 +141,7 @@ gh release upload v0.1.0 release-artifacts/v0.1.0/linux/parry-warrior-editor-lin
 ## 6. 문서 목록
 
 - `docs/gui-run-manual.md`
+- `docs/quick-edit-mode-manual.md`
 - `docs/build-manual.md`
 - `docs/build-scripts-guide.md`
 - `docs/github-release-guide.md`

@@ -68,6 +68,10 @@ The current new editor already supports:
 
 The current new editor does **not** yet support full note editing parity.
 
+빠른 편집 모드 전용 사용 흐름은 아래 문서를 참고하세요.
+
+- `docs/quick-edit-mode-manual.md`
+
 ## 5. Recommended manual test checklist
 
 ### Basic startup
@@ -128,6 +132,15 @@ The current new editor does **not** yet support full note editing parity.
 1. Load a song into a chart.
 2. Try to open another chart or close the app.
 3. Confirm the unsaved-changes prompt appears.
+
+### 빠른 편집 모드
+
+1. `docs/quick-edit-mode-manual.md`를 읽고 기대 동작을 확인합니다.
+2. 전용 빠른 편집 토글로 모드가 켜지고 꺼지는지 확인합니다.
+3. 재생 중 레인 키 입력이 raw time이 아니라 snapped time으로 노트를 만드는지 확인합니다.
+4. 동시 입력이 여러 레인의 동시치기 노트를 만드는지 확인합니다.
+5. 롱노트 가능 타입이 키 다운 시작 / 키 업 종료로 동작하는지 확인합니다.
+6. 빠른 편집 모드에서 마우스 클릭 노트 삽입이 막히고, 좌/우클릭이 구간 선택과 붙여넣기 마커 동작으로 바뀌는지 확인합니다.
 
 ## 6. Automated checks
 

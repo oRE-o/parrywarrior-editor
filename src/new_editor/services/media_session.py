@@ -317,7 +317,7 @@ if _qt_import_error is None:
             self._player.durationChanged.connect(self._handle_duration_changed)
             self._player.errorOccurred.connect(self._handle_error_occurred)
             self._hitsound_effect.statusChanged.connect(self._handle_hitsound_status_changed)
-            self._hitsound_effect.setVolume(0.35)
+            self._hitsound_effect.setVolume(self._state.hitsound_volume)
 
         @property
         def state(self) -> MediaState:
@@ -356,6 +356,8 @@ if _qt_import_error is None:
             self._player.setSource(QUrl())
             hitsound = self._state.hitsound
             self._state = MediaState(
+                volume=self._state.volume,
+                hitsound_volume=self._state.hitsound_volume,
                 hitsound=HitsoundState(
                     source_path=hitsound.source_path,
                     is_ready=hitsound.is_ready,
@@ -401,12 +403,20 @@ if _qt_import_error is None:
                 return
             self._emit_state_changed()
 
-        def set_volume(self, volume: float) -> None:
+        def set_song_volume(self, volume: float) -> None:
             safe_volume = min(1.0, max(0.0, float(volume)))
             if self._state.volume == safe_volume:
                 return
             self._state.volume = safe_volume
             self._audio_output.setVolume(safe_volume)
+            self._emit_state_changed()
+
+        def set_hitsound_volume(self, volume: float) -> None:
+            safe_volume = min(1.0, max(0.0, float(volume)))
+            if self._state.hitsound_volume == safe_volume:
+                return
+            self._state.hitsound_volume = safe_volume
+            self._hitsound_effect.setVolume(safe_volume)
             self._emit_state_changed()
 
         def stop(self) -> None:
@@ -532,6 +542,7 @@ if _qt_import_error is None:
                 position_ms=self._state.position_ms,
                 duration_ms=self._state.duration_ms,
                 volume=self._state.volume,
+                hitsound_volume=self._state.hitsound_volume,
                 waveform=WaveformData(
                     source_path=waveform.source_path,
                     peak_values=waveform.peak_values,
@@ -615,6 +626,8 @@ else:
         def clear_song(self) -> None:
             hitsound = self._state.hitsound
             self._state = MediaState(
+                volume=self._state.volume,
+                hitsound_volume=self._state.hitsound_volume,
                 hitsound=HitsoundState(
                     source_path=hitsound.source_path,
                     is_ready=hitsound.is_ready,
@@ -654,11 +667,18 @@ else:
             self._state.can_stop = self._state.playback_state != PlaybackState.STOPPED or self._state.position_ms > 0
             self.media_state_changed.emit(self.state)
 
-        def set_volume(self, volume: float) -> None:
+        def set_song_volume(self, volume: float) -> None:
             safe_volume = min(1.0, max(0.0, float(volume)))
             if self._state.volume == safe_volume:
                 return
             self._state.volume = safe_volume
+            self.media_state_changed.emit(self.state)
+
+        def set_hitsound_volume(self, volume: float) -> None:
+            safe_volume = min(1.0, max(0.0, float(volume)))
+            if self._state.hitsound_volume == safe_volume:
+                return
+            self._state.hitsound_volume = safe_volume
             self.media_state_changed.emit(self.state)
 
         def stop(self) -> None:

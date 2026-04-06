@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 
 from .legacy_rules import (
     can_place_note,
@@ -18,6 +18,14 @@ MAX_SCALE_PIXELS_PER_MS = 2.0
 DEFAULT_SCALE_PIXELS_PER_MS = 0.5
 DEFAULT_JUDGMENT_LINE_RATIO = 0.8
 DEFAULT_SNAP_DIVISION = 16
+QUICK_EDIT_KEY_PRESETS: dict[int, tuple[tuple[str, ...], ...]] = {
+    3: (("d",), ("f",), ("j",)),
+    4: (("d",), ("f",), ("j",), ("k",)),
+    5: (("s",), ("d",), ("f", "j"), ("k",), ("l",)),
+    6: (("s",), ("d",), ("f",), ("j",), ("k",), ("l",)),
+    7: (("s",), ("d",), ("f",), ("space", " "), ("j",), ("k",), ("l",)),
+}
+DEFAULT_QUICK_EDIT_LANE_KEY_PRESET = QUICK_EDIT_KEY_PRESETS[4]
 
 
 @dataclass(frozen=True, slots=True)
@@ -31,7 +39,34 @@ class TimelineGeometry:
 class TimelineToolState:
     snap_division: int = DEFAULT_SNAP_DIVISION
     current_note_type_name: str = "Tap"
+    quick_edit_enabled: bool = False
+    quick_edit_lane_key_preset: tuple[tuple[str, ...], ...] = DEFAULT_QUICK_EDIT_LANE_KEY_PRESET
     pending_long_note: PendingLongNote | None = None
+    pending_long_notes: tuple[PendingLongNote, ...] = ()
+    active_quick_edit_keys: tuple[str, ...] = ()
+    selection_range: TimelineSelectionRange | None = None
+    paste_marker_time_ms: float | None = None
+    copy_buffer: TimelineCopyBuffer | None = None
+
+
+@dataclass(frozen=True, slots=True)
+class TimelineSelectionRange:
+    start_time_ms: float
+    end_time_ms: float
+
+
+@dataclass(frozen=True, slots=True)
+class TimelineCopiedNote:
+    time_offset_ms: float
+    lane: int
+    note_type_name: str
+    end_time_offset_ms: float | None = None
+
+
+@dataclass(frozen=True, slots=True)
+class TimelineCopyBuffer:
+    source_start_time_ms: float
+    notes: tuple[TimelineCopiedNote, ...]
 
 
 @dataclass(frozen=True, slots=True)
@@ -49,6 +84,183 @@ class TimelineEditOutcome:
 
 def clamp_scale_pixels_per_ms(scale_pixels_per_ms: float) -> float:
     return min(MAX_SCALE_PIXELS_PER_MS, max(MIN_SCALE_PIXELS_PER_MS, float(scale_pixels_per_ms)))
+
+
+def quick_edit_lane_key_preset_for_lane_count(lane_count: int) -> tuple[tuple[str, ...], ...]:
+    safe_lane_count = min(7, max(3, int(lane_count)))
+    return QUICK_EDIT_KEY_PRESETS[safe_lane_count]
+
+
+def normalize_quick_edit_key(key: str) -> str:
+    normalized_key = key.strip().lower()
+    if normalized_key in {"", "spacebar"}:
+        return "space" if key == " " else ""
+    if normalized_key == " ":
+        return "space"
+    return normalized_key
+
+
+def quick_edit_lane_for_key(tool_state: TimelineToolState, key: str) -> int | None:
+    normalized_key = normalize_quick_edit_key(key)
+    if not normalized_key:
+        return None
+    for lane, lane_keys in enumerate(tool_state.quick_edit_lane_key_preset):
+        if normalized_key in lane_keys:
+            return lane
+    return None
+
+
+def pending_long_note_for_lane(pending_long_notes: tuple[PendingLongNote, ...], lane: int) -> PendingLongNote | None:
+    for pending_long_note in pending_long_notes:
+        if pending_long_note.lane == lane:
+            return pending_long_note
+    return None
+
+
+def normalize_selection_range(start_time_ms: float | None, end_time_ms: float | None) -> TimelineSelectionRange | None:
+    if start_time_ms is None or end_time_ms is None:
+        return None
+    normalized_start_time_ms = float(start_time_ms)
+    normalized_end_time_ms = float(end_time_ms)
+    if normalized_end_time_ms < normalized_start_time_ms:
+        normalized_start_time_ms, normalized_end_time_ms = normalized_end_time_ms, normalized_start_time_ms
+    return TimelineSelectionRange(
+        start_time_ms=normalized_start_time_ms,
+        end_time_ms=normalized_end_time_ms,
+    )
+
+
+def snapped_chart_time_ms(chart: Chart, current_audio_time_ms: float, snap_division: int) -> float:
+    current_note_time_ms = float(current_audio_time_ms) + chart.offset_ms
+    return snap_time_to_grid(current_note_time_ms, bpm=chart.bpm, snap_division=snap_division)
+
+
+def selected_notes_in_range(chart: Chart, selection_range: TimelineSelectionRange | None) -> tuple[Note, ...]:
+    if selection_range is None:
+        return ()
+    matching_notes = [
+        note
+        for note in chart.notes
+        if selection_range.start_time_ms <= note.time_ms <= selection_range.end_time_ms
+    ]
+    return tuple(sorted(matching_notes, key=_note_sort_key))
+
+
+def build_copy_buffer(chart: Chart, selection_range: TimelineSelectionRange | None) -> TimelineCopyBuffer | None:
+    if selection_range is None:
+        return None
+    selected_notes = selected_notes_in_range(chart, selection_range)
+    copied_notes = tuple(
+        TimelineCopiedNote(
+            time_offset_ms=note.time_ms - selection_range.start_time_ms,
+            lane=note.lane,
+            note_type_name=note.note_type_name,
+            end_time_offset_ms=None
+            if note.end_time_ms is None
+            else note.end_time_ms - selection_range.start_time_ms,
+        )
+        for note in selected_notes
+    )
+    return TimelineCopyBuffer(source_start_time_ms=selection_range.start_time_ms, notes=copied_notes)
+
+
+def rename_note_type_in_copy_buffer(
+    copy_buffer: TimelineCopyBuffer | None,
+    old_name: str,
+    new_name: str,
+) -> TimelineCopyBuffer | None:
+    if copy_buffer is None:
+        return None
+    return TimelineCopyBuffer(
+        source_start_time_ms=copy_buffer.source_start_time_ms,
+        notes=tuple(
+            TimelineCopiedNote(
+                time_offset_ms=copied_note.time_offset_ms,
+                lane=copied_note.lane,
+                note_type_name=new_name if copied_note.note_type_name == old_name else copied_note.note_type_name,
+                end_time_offset_ms=copied_note.end_time_offset_ms,
+            )
+            for copied_note in copy_buffer.notes
+        ),
+    )
+
+
+def handle_quick_edit_press(
+    chart: Chart,
+    tool_state: TimelineToolState,
+    lane: int,
+    snapped_time_ms: float,
+) -> TimelineEditOutcome:
+    current_note_type = chart.note_types.get(tool_state.current_note_type_name)
+    if current_note_type is None:
+        return TimelineEditOutcome(chart_changed=False, next_state=tool_state)
+    if current_note_type.is_long_note:
+        if pending_long_note_for_lane(tool_state.pending_long_notes, lane) is not None:
+            return TimelineEditOutcome(chart_changed=False, next_state=tool_state)
+        if not can_place_note(chart.notes, lane=lane, snapped_time_ms=snapped_time_ms):
+            return TimelineEditOutcome(chart_changed=False, next_state=tool_state)
+        pending_long_notes = list(tool_state.pending_long_notes)
+        pending_long_notes.append(make_pending_long_note(snapped_time_ms, lane, tool_state.current_note_type_name))
+        return TimelineEditOutcome(
+            chart_changed=False,
+            next_state=replace(tool_state, pending_long_notes=_sorted_pending_long_notes(pending_long_notes)),
+        )
+    if not can_place_note(chart.notes, lane=lane, snapped_time_ms=snapped_time_ms):
+        return TimelineEditOutcome(chart_changed=False, next_state=tool_state)
+    chart.notes.append(Note(time_ms=snapped_time_ms, note_type_name=tool_state.current_note_type_name, lane=lane))
+    return TimelineEditOutcome(chart_changed=True, next_state=tool_state)
+
+
+def handle_quick_edit_release(
+    chart: Chart,
+    tool_state: TimelineToolState,
+    lane: int,
+    snapped_time_ms: float,
+) -> TimelineEditOutcome:
+    pending_long_note = pending_long_note_for_lane(tool_state.pending_long_notes, lane)
+    if pending_long_note is None:
+        return TimelineEditOutcome(chart_changed=False, next_state=tool_state)
+    remaining_pending_long_notes = tuple(
+        existing_pending_long_note
+        for existing_pending_long_note in tool_state.pending_long_notes
+        if existing_pending_long_note.lane != lane
+    )
+    chart.notes.append(finalize_long_note(pending_long_note, snapped_time_ms))
+    return TimelineEditOutcome(
+        chart_changed=True,
+        next_state=replace(tool_state, pending_long_notes=remaining_pending_long_notes),
+    )
+
+
+def apply_paste_buffer(chart: Chart, tool_state: TimelineToolState) -> TimelineEditOutcome:
+    copy_buffer = tool_state.copy_buffer
+    paste_marker_time_ms = tool_state.paste_marker_time_ms
+    if copy_buffer is None or paste_marker_time_ms is None:
+        return TimelineEditOutcome(chart_changed=False, next_state=tool_state)
+
+    chart_changed = False
+    for copied_note in copy_buffer.notes:
+        if copied_note.lane >= chart.num_lanes:
+            continue
+        if copied_note.note_type_name not in chart.note_types:
+            continue
+
+        pasted_time_ms = paste_marker_time_ms + copied_note.time_offset_ms
+        if not can_place_note(chart.notes, lane=copied_note.lane, snapped_time_ms=pasted_time_ms):
+            continue
+
+        chart.notes.append(
+            Note(
+                time_ms=pasted_time_ms,
+                note_type_name=copied_note.note_type_name,
+                lane=copied_note.lane,
+                end_time_ms=None
+                if copied_note.end_time_offset_ms is None
+                else paste_marker_time_ms + copied_note.end_time_offset_ms,
+            )
+        )
+        chart_changed = True
+    return TimelineEditOutcome(chart_changed=chart_changed, next_state=tool_state)
 
 
 def normalize_current_note_type(chart: Chart, requested_name: str | None = None) -> str:
@@ -139,11 +351,7 @@ def handle_primary_timeline_hit(
 ) -> TimelineEditOutcome:
     pending_long_note = tool_state.pending_long_note
     if pending_long_note is not None:
-        next_state = TimelineToolState(
-            snap_division=tool_state.snap_division,
-            current_note_type_name=tool_state.current_note_type_name,
-            pending_long_note=None,
-        )
+        next_state = replace(tool_state, pending_long_note=None)
         if hit.lane != pending_long_note.lane:
             return TimelineEditOutcome(chart_changed=False, next_state=next_state)
 
@@ -161,11 +369,7 @@ def handle_primary_timeline_hit(
         pending_long_note = make_pending_long_note(hit.snapped_time_ms, hit.lane, tool_state.current_note_type_name)
         return TimelineEditOutcome(
             chart_changed=False,
-            next_state=TimelineToolState(
-                snap_division=tool_state.snap_division,
-                current_note_type_name=tool_state.current_note_type_name,
-                pending_long_note=pending_long_note,
-            ),
+            next_state=replace(tool_state, pending_long_note=pending_long_note),
         )
 
     chart.notes.append(Note(time_ms=hit.snapped_time_ms, note_type_name=tool_state.current_note_type_name, lane=hit.lane))
@@ -178,14 +382,7 @@ def handle_secondary_timeline_hit(
     hit: TimelineHit,
 ) -> TimelineEditOutcome:
     if tool_state.pending_long_note is not None:
-        return TimelineEditOutcome(
-            chart_changed=False,
-            next_state=TimelineToolState(
-                snap_division=tool_state.snap_division,
-                current_note_type_name=tool_state.current_note_type_name,
-                pending_long_note=None,
-            ),
-        )
+        return TimelineEditOutcome(chart_changed=False, next_state=replace(tool_state, pending_long_note=None))
 
     note_to_delete = find_note_to_delete(chart.notes, lane=hit.lane, raw_time_ms=hit.raw_time_ms)
     if note_to_delete is None:
@@ -193,3 +390,16 @@ def handle_secondary_timeline_hit(
 
     chart.notes.remove(note_to_delete)
     return TimelineEditOutcome(chart_changed=True, next_state=tool_state)
+
+
+def _note_sort_key(note: Note) -> tuple[float, int, float, str]:
+    return (
+        note.time_ms,
+        note.lane,
+        note.end_time_ms if note.end_time_ms is not None else note.time_ms,
+        note.note_type_name,
+    )
+
+
+def _sorted_pending_long_notes(pending_long_notes: list[PendingLongNote]) -> tuple[PendingLongNote, ...]:
+    return tuple(sorted(pending_long_notes, key=lambda pending_long_note: (pending_long_note.lane, pending_long_note.time_ms, pending_long_note.type_name)))
