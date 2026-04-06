@@ -7,15 +7,17 @@ from PySide6.QtCore import QLineF, QRectF, QSize, Qt
 from PySide6.QtGui import QColor, QKeyEvent, QMouseEvent, QPainter, QPen, QWheelEvent
 from PySide6.QtWidgets import QWidget
 
-from ..core.legacy_rules import snap_duration_ms
-from ..core.media import MediaState
+from ..core.legacy_rules import can_place_note, snap_duration_ms
+from ..core.media import MediaState, PlaybackState
 from ..core.models import Chart, Note
 from ..core.timeline import (
     TimelineGeometry,
+    TimelineHit,
     TimelineToolState,
     centered_lane_end_x,
     centered_lane_start_x,
     judgment_line_y,
+    resolve_timeline_hit,
     screen_y_to_time,
     time_to_screen_y,
 )
@@ -40,6 +42,7 @@ class TimelineCanvasWidget(QWidget):
         self._media_state = MediaState()
         self._tool_state = TimelineToolState()
         self._timeline_geometry = TimelineGeometry()
+        self._hover_position: tuple[float, float] | None = None
         self._preview_mouse_y: float | None = None
 
         self._primary_click_handler: TimelineClickHandler | None = None
@@ -109,8 +112,8 @@ class TimelineCanvasWidget(QWidget):
         self.setFocus(Qt.FocusReason.MouseFocusReason)
         self._scrub_handler(
             float(angle_delta_y) / 120.0,
-            alt_pressed=bool(event.modifiers() & Qt.KeyboardModifier.AltModifier),
-            ctrl_pressed=bool(event.modifiers() & Qt.KeyboardModifier.ControlModifier),
+            bool(event.modifiers() & Qt.KeyboardModifier.AltModifier),
+            bool(event.modifiers() & Qt.KeyboardModifier.ControlModifier),
         )
         event.accept()
 
@@ -129,15 +132,18 @@ class TimelineCanvasWidget(QWidget):
         super().keyPressEvent(event)
 
     def mouseMoveEvent(self, event: QMouseEvent) -> None:
+        hovered_y = self._clamp_y(float(event.position().y()))
+        self._hover_position = (float(event.position().x()), hovered_y)
         if self._tool_state.pending_long_note is not None:
-            self._preview_mouse_y = self._clamp_y(float(event.position().y()))
-            self.update()
+            self._preview_mouse_y = hovered_y
+        self.update()
         super().mouseMoveEvent(event)
 
     def leaveEvent(self, event) -> None:
+        self._hover_position = None
         if self._tool_state.pending_long_note is not None:
             self._preview_mouse_y = None
-            self.update()
+        self.update()
         super().leaveEvent(event)
 
     def paintEvent(self, event) -> None:
@@ -167,6 +173,7 @@ class TimelineCanvasWidget(QWidget):
         self._draw_grid(painter, lane_start_x, lane_end_x, current_note_time_ms)
         self._draw_lane_boundaries(painter, lane_start_x)
         self._draw_notes(painter, current_note_time_ms)
+        self._draw_hover_placement_preview(painter, current_note_time_ms)
         self._draw_pending_long_preview(painter, current_note_time_ms)
         self._draw_playhead(painter, lane_start_x, lane_end_x, current_note_time_ms)
         self._draw_judgment_line(painter, lane_start_x, lane_end_x)
@@ -297,6 +304,37 @@ class TimelineCanvasWidget(QWidget):
         painter.setBrush(preview_color)
         painter.drawRect(preview_rect)
 
+    def _draw_hover_placement_preview(self, painter: QPainter, current_note_time_ms: float) -> None:
+        if self._media_state.playback_state == PlaybackState.PLAYING:
+            return
+        if self._tool_state.pending_long_note is not None:
+            return
+
+        hover_hit = self._hover_timeline_hit()
+        if hover_hit is None:
+            return
+        if not can_place_note(self._chart.notes, lane=hover_hit.lane, snapped_time_ms=hover_hit.snapped_time_ms):
+            return
+
+        note_type = self._chart.note_types.get(self._tool_state.current_note_type_name)
+        if note_type is None:
+            return
+
+        preview_rect = QRectF(
+            self._lane_x(hover_hit.lane) + 1.0,
+            time_to_screen_y(hover_hit.snapped_time_ms, current_note_time_ms, self.height(), self._timeline_geometry)
+            - float(SPACE.sm),
+            self._timeline_geometry.lane_width_pixels - 2.0,
+            float(SPACE.sm),
+        )
+        preview_color = QColor(color_to_hex(note_type.color))
+        preview_color.setAlpha(96)
+        outline_color = QColor(color_to_hex(note_type.color))
+        outline_color.setAlpha(176)
+        painter.setPen(QPen(outline_color, 1.0))
+        painter.setBrush(preview_color)
+        painter.drawRect(preview_rect)
+
     def _draw_playhead(
         self,
         painter: QPainter,
@@ -326,6 +364,21 @@ class TimelineCanvasWidget(QWidget):
 
     def _current_note_time_ms(self) -> float:
         return float(self._media_state.position_ms) + self._chart.offset_ms
+
+    def _hover_timeline_hit(self) -> TimelineHit | None:
+        hover_position = self._hover_position
+        if hover_position is None:
+            return None
+        return resolve_timeline_hit(
+            self._chart,
+            float(self._media_state.position_ms),
+            self._tool_state,
+            self.width(),
+            self.height(),
+            hover_position[0],
+            hover_position[1],
+            self._timeline_geometry,
+        )
 
     def _clamp_y(self, y_position: float) -> float:
         return min(float(self.height()), max(0.0, y_position))

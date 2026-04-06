@@ -654,6 +654,13 @@ else:
             self._state.can_stop = self._state.playback_state != PlaybackState.STOPPED or self._state.position_ms > 0
             self.media_state_changed.emit(self.state)
 
+        def set_volume(self, volume: float) -> None:
+            safe_volume = min(1.0, max(0.0, float(volume)))
+            if self._state.volume == safe_volume:
+                return
+            self._state.volume = safe_volume
+            self.media_state_changed.emit(self.state)
+
         def stop(self) -> None:
             self._state.playback_state = PlaybackState.STOPPED
             self._state.position_ms = 0
@@ -730,7 +737,7 @@ def _is_executable_file(path: Path) -> bool:
 def _waveform_from_pcm_samples(
     *,
     source: Path,
-    samples: array,
+    samples: array[int],
     sample_rate_hz: int,
     channel_count: int,
     target_points: int,

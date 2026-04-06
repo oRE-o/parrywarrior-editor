@@ -351,17 +351,36 @@ class EditorSession(QObject):
         self,
         note_type_name: str,
         *,
+        name: str,
         color: tuple[int, int, int],
         is_long_note: bool,
         play_hitsound: bool,
     ) -> None:
-        _ = update_note_type(
+        result = update_note_type(
             self._chart,
             note_type_name,
+            name=name,
             color=color,
             is_long_note=is_long_note,
             play_hitsound=play_hitsound,
         )
+        if result.renamed:
+            renamed_note_type_name = result.note_type.name
+            pending_long_note = self._timeline_state.pending_long_note
+            if pending_long_note is not None and pending_long_note.type_name == note_type_name:
+                pending_long_note = replace(pending_long_note, type_name=renamed_note_type_name)
+
+            current_note_type_name = self._timeline_state.current_note_type_name
+            if current_note_type_name == note_type_name:
+                current_note_type_name = renamed_note_type_name
+
+            self._set_timeline_state(
+                replace(
+                    self._timeline_state,
+                    current_note_type_name=current_note_type_name,
+                    pending_long_note=pending_long_note,
+                )
+            )
         self._mark_chart_edited()
 
     def handle_timeline_primary_click(

@@ -30,7 +30,7 @@ from PySide6.QtWidgets import (
 
 from ..core.media import MediaState, PlaybackState
 from ..core.models import Chart, Color
-from ..core.note_types import LEGACY_NOTE_TYPE_PRESET_COLORS
+from ..core.note_types import LEGACY_NOTE_TYPE_PRESET_COLORS, count_notes_using_note_type
 from ..core.timeline import (
     DEFAULT_SCALE_PIXELS_PER_MS,
     MAX_SCALE_PIXELS_PER_MS,
@@ -70,6 +70,7 @@ class NoteTypeEditorDialog(QDialog):
     ) -> None:
         super().__init__(parent)
         self._mode = mode
+        self._original_name = name
         self._existing_names = set(existing_names)
         self._selected_color = color
 
@@ -88,8 +89,6 @@ class NoteTypeEditorDialog(QDialog):
 
         self.name_edit = QLineEdit()
         self.name_edit.setText(name)
-        if mode == "edit":
-            self.name_edit.setReadOnly(True)
         form.addRow("Name", self.name_edit)
 
         color_controls = QHBoxLayout()
@@ -183,17 +182,17 @@ class NoteTypeEditorDialog(QDialog):
         self.color_value_label.setText(hex_color)
 
     def _refresh_validation(self) -> None:
-        if self._mode == "edit":
-            self._ok_button.setEnabled(True)
-            self.validation_label.setText("")
-            return
-
         proposed_name = self.name_edit.text().strip()
         if not proposed_name:
             self._ok_button.setEnabled(False)
             self.validation_label.setText("")
             return
-        if proposed_name in self._existing_names:
+
+        name_conflicts = proposed_name in self._existing_names
+        if self._mode == "edit" and proposed_name == self._original_name:
+            name_conflicts = False
+
+        if name_conflicts:
             self._ok_button.setEnabled(False)
             self.validation_label.setText("Name already exists.")
             return
@@ -636,13 +635,40 @@ class InspectorPanel(QWidget):
         )
         if dialog.exec() != QDialog.DialogCode.Accepted:
             return
-        _name, color, is_long_note, play_hitsound = dialog.values()
-        self._edit_note_type_handler(
-            selected_name,
-            color=color,
-            is_long_note=is_long_note,
-            play_hitsound=play_hitsound,
+        name, color, is_long_note, play_hitsound = dialog.values()
+        if not self._confirm_note_type_rename(selected_name, name):
+            return
+        try:
+            self._edit_note_type_handler(
+                selected_name,
+                name=name,
+                color=color,
+                is_long_note=is_long_note,
+                play_hitsound=play_hitsound,
+            )
+        except ValueError as exc:
+            _ = QMessageBox.warning(self, "Could not update note type", str(exc))
+
+    def _confirm_note_type_rename(self, original_name: str, updated_name: str) -> bool:
+        if updated_name == original_name:
+            return True
+
+        affected_count = count_notes_using_note_type(self._chart, original_name)
+        if affected_count <= 0:
+            return True
+
+        note_label = "note" if affected_count == 1 else "notes"
+        answer = QMessageBox.question(
+            self,
+            "Rename note type and migrate notes?",
+            (
+                f"Renaming note type '{original_name}' to '{updated_name}' will migrate "
+                f"{affected_count} placed {note_label} from '{original_name}' to '{updated_name}'."
+            ),
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.Cancel,
+            QMessageBox.StandardButton.Yes,
         )
+        return answer == QMessageBox.StandardButton.Yes
 
     def _selected_note_type_name(self) -> str | None:
         current_item = self.note_type_list.currentItem()
